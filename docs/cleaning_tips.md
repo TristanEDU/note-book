@@ -1,1 +1,0 @@
-- If you need to clean the car headlights you can use a mixture of one squeezed lemon and two spoonfuls of baking soda
