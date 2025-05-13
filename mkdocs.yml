@@ -1,69 +1,13 @@
----
 site_name: My Note Book
-site_description: My personal digital garden
-site_author: Tristan
-site_url: https://TristanEDU.github.io/note-book
-#nav:
- # - Home: index.md
+site_url: https://tristanedu.github.io/note-book/
+repo_name: TristanEDU/note-book
+repo_url: https://github.com/TristanEDU/note-book
 
-plugins:
-  - search
-  - exclude-search:
-      exclude: [newsletter/*]
-#  - autolinks
-  - git-revision-date-localized:
-      type: timeago
-  - minify:
-      minify_html: true
-#  - section-index
-#  - mkdocs-newsletter
-  - gen_nav:
-      enabled: true
+docs_dir: docs
+use_directory_urls: false
 
-markdown_extensions:
-  - abbr
-  - admonition
-  - attr_list
-  - meta
-  - def_list
-  - toc:
-      permalink: ⚑
-      baselevel: 2
-  - pymdownx.arithmatex
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      options:
-        custom_icons:
-          - theme/.icons
-  - pymdownx.magiclink
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
 theme:
   name: material
-  custom_dir: theme
-  logo: img/logo.bmp
-  features:
-    - navigation.footer
-    - navigation.instant
-    - navigation.top
-    - content.code.annotate
-    - search.suggest
-    - search.highlight
-
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
@@ -83,14 +27,18 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode
 
-#extra_css: [stylesheets/extra.css, stylesheets/links.css]
+# Optional extras - Uncomment if you want to re-enable custom CSS or social links
+#extra_css:
+#  - stylesheets/extra.css
+#  - stylesheets/links.css
 
 #extra:
- # social:
-  #  - icon: fontawesome/brands/github-alt
-   #   link: https://github.com/TristanEDU
-    #- icon: fontawesome/solid/rss
-     # link: https://lyz-code.github.io/blue-book/newsletter/0_newsletter_index
+#  social:
+#    - icon: fontawesome/brands/github-alt
+#      link: https://github.com/TristanEDU
+#    - icon: fontawesome/solid/rss
+#      link: https://lyz-code.github.io/blue-book/newsletter/0_newsletter_index
+
 
 repo_name: TristanEDU/note-book
 repo_url: https://github.com/TristanEDU/note-book
