@@ -3,8 +3,8 @@ site_name: The Blue Book
 site_description: My personal digital garden
 site_author: Lyz
 site_url: https://lyz-code.github.io/blue-book
-nav:
-  - Home: index.md
+#nav:
+ # - Home: index.md
 
 plugins:
   - search
@@ -17,6 +17,8 @@ plugins:
       minify_html: true
 #  - section-index
 #  - mkdocs-newsletter
+  - gen-nav:
+      enabled: true
 
 markdown_extensions:
   - abbr
