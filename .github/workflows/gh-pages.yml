@@ -23,6 +23,9 @@ jobs:
         with:
           python-version: 3.9
 
+      - name: Install build tools for Python packages
+        run: pip install --upgrade pip setuptools wheel cython
+        
       - name: Install dependencies
         run: make install
 
