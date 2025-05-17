@@ -2,7 +2,9 @@
     ├── Timeline
     │   └── 2025
     │       └── May
-    │           └── W2_11-17
+    │           ├── W2_11-17
+    │           │   └── Friday.md
+    │           └── W3_11-17
     │               └── Friday.md
     ├── assets
     │   ├── Aircraft_Website_Design_Brief.pdf
@@ -69,10 +71,12 @@
     │   ├── CSS-resources.md
     │   ├── GoHighLevel.md
     │   └── README.md
+    ├── assets (2).zip
+    ├── assets.zip
     ├── deploy.md
     ├── gh-pages.md
     ├── index.md
     ├── markdown-cheatsheet.md
     └── structure.md
     
-    15 directories, 61 files
+    16 directories, 64 files
