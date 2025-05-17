@@ -1,5 +1,9 @@
     /home/tristan/note-book/docs
     ├── Timeline
+    │   └── 2025
+    │       └── May
+    │           └── W2_11-17
+    │               └── Friday.md
     ├── assets
     │   ├── Aircraft_Website_Design_Brief.pdf
     │   ├── Aircraft_Website_Design_Brief.pdf:Zone.Identifier
@@ -68,6 +72,7 @@
     ├── deploy.md
     ├── gh-pages.md
     ├── index.md
-    └── markdown-cheatsheet.md
+    ├── markdown-cheatsheet.md
+    └── structure.md
     
-    12 directories, 59 files
+    15 directories, 61 files
