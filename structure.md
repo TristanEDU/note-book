@@ -250,6 +250,7 @@
     ├── pdm.lock
     ├── pyproject.toml
     ├── structure.md
+    ├── sync-notes.sh
     └── syncnotes.py
     
-    36 directories, 217 files
+    36 directories, 218 files
