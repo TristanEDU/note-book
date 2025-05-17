@@ -23,10 +23,10 @@ I am working on the Raised garden bed. We need to make sure we have all of the p
 ## 📋 Tasks
 ### ✅ Completed
 - [X] Take Gillian Flying
-### 🔄 In Progress
 - [x] Weedwack the yard
 - [x] Get filler dirt for garden
-- [ ] Get top compost for garden
+- [x] Get top compost for garden
+### 🔄 In Progress
 - [ ] List out and get plant starts for garden
 - [ ] Find wattering solution for Garden
 - [ ] Prep for setting up deer deterent for garden... Maybe electric fence and penut butter?
@@ -40,7 +40,8 @@ I am working on the Raised garden bed. We need to make sure we have all of the p
 - 07:55 - started weed whacking yard
 - 10:15 - got back from getting first load of soil from my parents 
 - 11:30 - went for more compost front parents
-- 12:50 - started unloading compost from truck 
+- 12:50 - started unloading compost from truck
+- 14:30 - finished emptying the second load of compost and cleaning out the bed of the truck 
 
 ## 📎 Linked Notes
 - [Link](../some/note.md)
