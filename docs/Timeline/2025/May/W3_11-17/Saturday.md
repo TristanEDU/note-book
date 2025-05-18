@@ -26,12 +26,12 @@ I am working on the Raised garden bed. We need to make sure we have all of the p
 - [x] Weedwack the yard
 - [x] Get filler dirt for garden
 - [x] Get top compost for garden
+- [X] Find wattering solution for Garden
 ### 🔄 In Progress
-- [ ] List out and get plant starts for garden
-- [ ] Find wattering solution for Garden
-- [ ] Prep for setting up deer deterent for garden... Maybe electric fence and penut butter?
 - [ ] take out trash 
 ### 🕐 Future / Carryover
+- [ ] List out and get plant starts for garden
+- [ ] Prep for setting up deer deterent for garden... Maybe electric fence and penut butter?
 
 ## 🕑 Timeline Log
 - 05:30 – Went Flying with Gillian
@@ -41,12 +41,13 @@ I am working on the Raised garden bed. We need to make sure we have all of the p
 - 10:15 - got back from getting first load of soil from my parents 
 - 11:30 - went for more compost front parents
 - 12:50 - started unloading compost from truck
-- 14:30 - finished emptying the second load of compost and cleaning out the bed of the truck 
+- 14:30 - finished emptying the second load of compost and cleaning out the bed of the truck
+- 16:00 - Got home from returning the truck
 
 ## 📎 Linked Notes
 - [Link](../some/note.md)
 
 ## 📤 End-of-Day Reflection
-- What went well?
+- What went well? Flying, all of our garden prep with the exseption of getting plants becuase it got to late and the nursery was closed
 - What didn’t?
 - What to improve tomorrow?
