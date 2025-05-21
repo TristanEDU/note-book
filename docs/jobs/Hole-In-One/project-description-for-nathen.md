@@ -28,7 +28,7 @@
   - **PHP Version**: 8.2
 - **Quick Quotes Module**:
   - Amazon-based insurance quoting API
-  - Isolated from rest of WordPress site – **do not modify**
+  - Isolated from rest of WordPress site **do not modify**
 - **Backups**:
   - WP Engine performs **nightly backups**
   - Last known good backup: **April 23, 2025**
@@ -126,4 +126,6 @@
 
 ### 💡 Bundle Offer
 
-If you commit to any retainer tier for **3 months**, I’ll apply a **10% discount to the rebuild cost**.
+- If you commit to any retainer tier for **3 months**, I’ll apply a **10% discount to the rebuild cost**.
+- If you commit to either of the uper tier plans for **6 months** I will apply a **10% discount to the retainer**
+The hoped for outcome is that she will sign up for the middel tier for 6 months. In light of that I will try and aim for the Premium tier.
