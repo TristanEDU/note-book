@@ -1,4 +1,4 @@
-# HIOUSA Project Overview – Client Inputs & Research Summary
+# HIOUSA Project Overview – Client Inputs & Research Summary <sub>GPT generated portion, may be inacurate</sub>
 
 ---
 
@@ -89,4 +89,41 @@
 #My Aproach <sub>Sorry for not using GPT for this section but it was not giving the correct information</sub>
 ## My Discoveries
 - the site is built with a theme that basicly allows you to drag a drop a text editor and then custom code the particular section of the page.
-- there has been more t
+- there has been more then one change made to the wordpress php files. The one that I think is causing the issues is where they added fonts awsome which according to the client is when the site started having issues.
+## My Approach
+1. Throughly reviewed site before commiting to anything with client.
+2. Determined that a simple patch is not a viable solution. There are just to many issues and it is not worth the clients time or my reputation to try and patch this together.
+3. Determined on a strategy to deal with this
+	- Propose a site rebuild with limeted support for existing site until the new one is launched (in the initial meeting the client acnowledged that this may be nessary so I think that this will not be a issue)
+	- Propose a retainer imidiatly 
+###Pricing
+**Project Scope:**
+- Rebuild the entire site from scratch on a clean WordPress install using **Elementor**
+- Maintain existing layout/branding, with optional modernization if desired
+- Migrate content and structure into a clean, responsive theme
+- Integrate Quick Quotes as a placeholder (no changes to AWS backend)
+- Deliver a fast, secure, and stable site on WP Engine’s infrastructure
+- Apply performance and accessibility best practices
+
+**Timeline:** ~2–3 weeks
+**Ownership:** All assets and code transfer fully to you upon payment
+**Flat Rate:** $2,400 – $3,000
+
+### 🔄 Phase 2: Ongoing Retainer (Optional but Recommended)
+
+| Tier       | Monthly Fee | Hours Included | Notes |
+|------------|-------------|----------------|-------|
+| **Basic**  | $375        | 10 hrs         | Light maintenance, plugin updates |
+| **Standard** | $700      | 20 hrs         | Page updates, light design/dev, multi-site coverage |
+| **Premium**  | $1,200    | 30 hrs         | Priority access, Divi build support, content overhauls |
+
+**Benefits:**
+- WP updates and plugin maintenance
+- Staging site support (via WP Engine)
+- Layout, copy, and content changes
+- Priority response and availability
+- Premium includes planning calls and 10% rollover of unused time
+
+### 💡 Bundle Offer
+
+If you commit to any retainer tier for **3 months**, I’ll apply a **10% discount to the rebuild cost**.
