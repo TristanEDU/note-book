@@ -247,6 +247,8 @@ My current recomendation is that we completly rebuild the site from the ground u
 ---
 title: HIOUSA UI Design Checklist
 ---
+##Design blueprint
+[Basic web design example tailored to Hole in One](../../../web-design/Example-Design-Project.md)
 
 ## ✅ HIOUSA Rebuild – UI/UX Design Checklist
 
