@@ -108,4 +108,141 @@ spent half a hour setting up project managment and organisation systems this mor
 - This initial task board created
 
 ---
+##Page map
+###Main pages
+- https://hiousa.com/
+- https://hiousa.com/hole-in-one-insurance/
+	- https://hiousa.com/prize-package-ideas/
+- https://hiousa.com/putting-contest-insurance/
+	- https://hiousa.com/prize-package-ideas/
+- https://hiousa.com/million-dollar-shootout/
+- https://hiousa.com/sponsor-tee-signs/
+	- https://hiousa.com/wp-content/uploads/2021/05/HIOI_ponsor-Sign_Info_USA.pdf (PDF document)
+	- https://hiousa.com/wp-content/uploads/2022/02/SponsorSignOrderForm_USA_2022.pdf (another PDF document)
+- https://hiousa.com/contest-insurance/
+- https://hiousa.com/partners/
+- https://hiousa.com/contact-us/
+- https://hiousa.com/faq-hole-one-insurance/
+- https://hiousa.com/privacy-policy/
+###Affiliate pages on https://hiousa.com/
+Note that I broke these up into sections based on what type of page they are
+####Standard affiliate page layout
+- https://hiousa.com/partners/toyota-lexus/
+- https://hiousa.com/partners/honda-acura-emall/
+- https://hiousa.com/partners/folds-of-honor/
+- https://hiousa.com/partners/gtaa/
+- 
+####Nonstandard layouts
+These pages generaly lead to standard layouts but not always
+- https://hiousa.com/partners/marketcenter/
+- https://hiousa.com/partners/#Auto_Dealers_Association
+- https://hiousa.com/partners/#PGA_Sections
+- https://hiousa.com/partners/topgolf/
+###Affiliate pages on https://hiousa.com/partners/
+Note that I broke these up into sections based on what type of page they are
+####Standard affiliate page layout
+Note that I will put the PGA pages in their own section
+- https://hiousa.com/partners/toyota-lexus/
+- https://hiousa.com/partners/honda-acura-emall/
+- https://hiousa.com/partners/folds-of-honor/
+- https://hiousa.com/partners/GTAA/
+- https://hiousa.com/partners/southern-california-golf-association/
+- Auto Dealers Associations
+	- https://hiousa.com/partners/minnesota-auto-dealers-association/
+	- https://hiousa.com/partners/michigan-auto-dealers-association/
+####non-standard page layouts
+- https://hiousa.com/partners/marketcenter/
+- https://hiousa.com/partners/topgolf/
+####PGA Pages
+- https://hiousa.com/partners/carolinas-pga-section/
+- https://hiousa.com/partners/central-new-york-pga-section/
+- https://hiousa.com/partners/colorado-pga-section/
+- https://hiousa.com/partners/gateway-pga-section/
+- https://hiousa.com/partners/georgia-pga-section/
+- https://hiousa.com/partners/gulf-states-pga-section/
+- https://hiousa.com/partners/kentucky-pga-section/
+- https://hiousa.com/partners/middle-atlantic-pga-section/
+- https://hiousa.com/partners/midwest-pga-section/
+- https://hiousa.com/partners/minnesota-pga-section/
+- https://hiousa.com/partners/new-england-pga-section/
+- https://hiousa.com/partners/new-jersey-pga-section/
+- https://hiousa.com/partners/north-florida-pga-section/
+- https://hiousa.com/partners/northern-california-pga-section/
+- https://hiousa.com/partners/pacific-northwest-pga-section/
+- https://hiousa.com/partners/philadelphia-pga-section/
+- https://hiousa.com/partners/south-florida-pga-section/
+- https://hiousa.com/partners/southern-california-pga-section/
+- https://hiousa.com/partners/southern-ohio-pga-section/
+- https://hiousa.com/partners/southern-texas-pga-section/
+- https://hiousa.com/partners/southwest-pga-section/
+- https://hiousa.com/partners/sun-country-pga-section/
+- https://hiousa.com/partners/tennessee-pga-section/
+- https://hiousa.com/partners/tri-state-pga-section/
+- https://hiousa.com/partners/wisconsin-pga-section/
+
+### 2025-05-29 – Project Update
+
+**Focus:** Finalized site audit and layout scope for rebuild
+
+#### ✅ Completed Tasks
+- Full site map documented and categorized
+- Grouped pages by layout type (unique, standard, reusable)
+- Clarified scope of PGA section rebuild and prize package page
+
+#### 🔄 In Progress
+- Preparing WP Engine Dev environment (Milestone 2)
+
+#### 📌 Next Steps
+- Begin Milestone 2: Environment Setup
+- Create base Elementor template for PGA section pages
+- Review layout of `prize-package-ideas/` for standalone styling
+
+---
+
+## 📄 Final Page Layout Summary
+
+### 🔹 Unique Layouts (10 Pages)
+- `/` (Home)
+- `/hole-in-one-insurance/`
+- `/putting-contest-insurance/`
+- `/million-dollar-shootout/`
+- `/sponsor-tee-signs/`
+- `/contest-insurance/`
+- `/faq-hole-one-insurance/`
+- `/contact-us/`
+- `/privacy-policy/`
+- `/partners/` (hub page)
+
+### 🔸 Reused Layout: Standard Affiliate Pages (~8)
+- e.g. `/partners/toyota-lexus/`, `/partners/honda-acura-emall/`
+
+### 🔸 Reused Layout: PGA Section Pages (25)
+- `/partners/*pga-section/`  
+- All require identical structure  
+- Only per-page **API key** + **logo** differ  
+- Will use a **base Elementor template**
+
+### ⚠️ Non-Standard Pages (4)
+- `/partners/marketcenter/`
+- `/partners/topgolf/`
+- Others with non-repeating structure
+
+### ➕ Independent Content Page
+- `/prize-package-ideas/` is a standalone page  
+  - It’s **linked from multiple pages** but has its **own layout**
+
+---
+
+## ✅ Scope Clarifications
+
+- Anchor links (e.g. `#Auto_Dealers_Association`) are part of `/partners/` and **not separate pages** — no rebuild required.
+- All **PGA pages** will be rebuilt using a **shared template**; only small dynamic edits needed per page.
+- `prize-package-ideas/` is treated as a **standalone content page**, not a reusable section.
+
+---
+
+## ✅ Milestone 1 – Complete
+
+We are now ready to begin **Milestone 2: Environment Setup on WP Engine**.
+
 
