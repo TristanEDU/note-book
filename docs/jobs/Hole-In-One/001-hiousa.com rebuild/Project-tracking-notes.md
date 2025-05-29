@@ -394,4 +394,85 @@ The current system uses Quick Rdirects plugin to manage all of its redirects so 
 
 ---
 
-Let me know once the media upload is complete or if you want help defining your global color and font values before continuing with header/footer design.
+## 🎨 Global Style Guide – hiousa.com (for Hello Elementor Theme)
+
+### 1. Typography
+
+- **Font Family:** `'Open Sans', sans-serif`
+- **Heading Font Weights:**
+  - `h1`–`h3`: `700` (bold)
+  - `h4`–`h6`: `600` or `normal`
+- **Body Text Size:** `16px`
+- **Line Height:** ~`1.5em` (approx. 24px)
+
+---
+
+### 2. Color Palette
+
+- **Primary Color (Buttons, Links, Accents):** `#c8102e` (bright red)
+- **Secondary Color:** `#002855` (navy blue)
+- **Text Color:** `#333333`
+- **Background Color:** `#ffffff`
+- **Header Background:** `#002855`
+- **Footer Background:** `#f8f8f8`
+
+---
+
+### 3. Links
+
+- **Text Links:**
+  - Color: `#c8102e`
+  - Hover: underline
+- **Menu Items:**
+  - Text Color: `#ffffff`
+  - Background Hover: `#c8102e`
+
+---
+
+### 4. Buttons
+
+- **Primary Button:**
+  - Background: `#c8102e`
+  - Text: `#ffffff`
+  - Padding: `12px 25px`
+  - Border Radius: `4px`
+  - Hover: subtle darkening or shadow
+- **Secondary Button:**
+  - Background: transparent or white
+  - Border: `1px solid #c8102e`
+  - Text: `#c8102e`
+
+---
+
+### 5. Layout and Spacing
+
+- **Section Padding:** `60px top & bottom`
+- **Container Max Width:** `1170px`
+- **Grid Gaps / Column Spacing:** `30px`
+
+---
+
+### 6. Forms
+
+- **Input Field Styling:**
+  - Border: `1px solid #cccccc`
+  - Border Radius: `4px`
+  - Focus Color: `#c8102e`
+
+---
+
+### ✅ Elementor Site Settings Suggestions
+
+#### Global Colors
+- `Primary`: `#c8102e`
+- `Secondary`: `#002855`
+- `Text`: `#333333`
+- `Background`: `#ffffff`
+- `Accent`: `#f8f8f8`
+
+#### Global Fonts
+- **Font:** `'Open Sans', sans-serif`
+- **Base Text Size:** `16px`
+- **Line Height:** `1.5`
+- **Headings Weight:** `700` (h1–h3), `600` (h4–h6)
+
