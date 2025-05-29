@@ -108,77 +108,85 @@ spent half a hour setting up project managment and organisation systems this mor
 - This initial task board created
 
 ---
-##Page map
-###Main pages
-- https://hiousa.com/
-- https://hiousa.com/hole-in-one-insurance/
-	- https://hiousa.com/prize-package-ideas/
-- https://hiousa.com/putting-contest-insurance/
-	- https://hiousa.com/prize-package-ideas/
-- https://hiousa.com/million-dollar-shootout/
-- https://hiousa.com/sponsor-tee-signs/
-	- https://hiousa.com/wp-content/uploads/2021/05/HIOI_ponsor-Sign_Info_USA.pdf (PDF document)
-	- https://hiousa.com/wp-content/uploads/2022/02/SponsorSignOrderForm_USA_2022.pdf (another PDF document)
-- https://hiousa.com/contest-insurance/
-- https://hiousa.com/partners/
-- https://hiousa.com/contact-us/
-- https://hiousa.com/faq-hole-one-insurance/
-- https://hiousa.com/privacy-policy/
-###Affiliate pages on https://hiousa.com/
+## Page map
+
+### Main pages
+- [https://hiousa.com/](https://hiousa.com/)
+- [https://hiousa.com/hole-in-one-insurance/](https://hiousa.com/hole-in-one-insurance/)
+    - [https://hiousa.com/prize-package-ideas/](https://hiousa.com/prize-package-ideas/)
+- [https://hiousa.com/putting-contest-insurance/](https://hiousa.com/putting-contest-insurance/)
+    - [https://hiousa.com/prize-package-ideas/](https://hiousa.com/prize-package-ideas/)
+- [https://hiousa.com/million-dollar-shootout/](https://hiousa.com/million-dollar-shootout/)
+- [https://hiousa.com/sponsor-tee-signs/](https://hiousa.com/sponsor-tee-signs/)
+    - [HIOI Sponsor Sign Info (PDF)](https://hiousa.com/wp-content/uploads/2021/05/HIOI_ponsor-Sign_Info_USA.pdf)
+    - [Sponsor Sign Order Form 2022 (PDF)](https://hiousa.com/wp-content/uploads/2022/02/SponsorSignOrderForm_USA_2022.pdf)
+- [https://hiousa.com/contest-insurance/](https://hiousa.com/contest-insurance/)
+- [https://hiousa.com/partners/](https://hiousa.com/partners/)
+- [https://hiousa.com/contact-us/](https://hiousa.com/contact-us/)
+- [https://hiousa.com/faq-hole-one-insurance/](https://hiousa.com/faq-hole-one-insurance/)
+- [https://hiousa.com/privacy-policy/](https://hiousa.com/privacy-policy/)
+
+### Affiliate pages on https://hiousa.com/
 Note that I broke these up into sections based on what type of page they are
-####Standard affiliate page layout
-- https://hiousa.com/partners/toyota-lexus/
-- https://hiousa.com/partners/honda-acura-emall/
-- https://hiousa.com/partners/folds-of-honor/
-- https://hiousa.com/partners/gtaa/
-- 
-####Nonstandard layouts
-These pages generaly lead to standard layouts but not always
-- https://hiousa.com/partners/marketcenter/
-- https://hiousa.com/partners/#Auto_Dealers_Association
-- https://hiousa.com/partners/#PGA_Sections
-- https://hiousa.com/partners/topgolf/
-###Affiliate pages on https://hiousa.com/partners/
+
+#### Standard affiliate page layout
+- [https://hiousa.com/partners/toyota-lexus/](https://hiousa.com/partners/toyota-lexus/)
+- [https://hiousa.com/partners/honda-acura-emall/](https://hiousa.com/partners/honda-acura-emall/)
+- [https://hiousa.com/partners/folds-of-honor/](https://hiousa.com/partners/folds-of-honor/)
+- [https://hiousa.com/partners/gtaa/](https://hiousa.com/partners/gtaa/)
+
+#### Nonstandard layouts
+These pages generally lead to standard layouts but not always
+- [https://hiousa.com/partners/marketcenter/](https://hiousa.com/partners/marketcenter/)
+- [https://hiousa.com/partners/#Auto_Dealers_Association](https://hiousa.com/partners/#Auto_Dealers_Association)
+- [https://hiousa.com/partners/#PGA_Sections](https://hiousa.com/partners/#PGA_Sections)
+- [https://hiousa.com/partners/topgolf/](https://hiousa.com/partners/topgolf/)
+
+### Affiliate pages on https://hiousa.com/partners/
 Note that I broke these up into sections based on what type of page they are
-####Standard affiliate page layout
+
+#### Standard affiliate page layout
 Note that I will put the PGA pages in their own section
-- https://hiousa.com/partners/toyota-lexus/
-- https://hiousa.com/partners/honda-acura-emall/
-- https://hiousa.com/partners/folds-of-honor/
-- https://hiousa.com/partners/GTAA/
-- https://hiousa.com/partners/southern-california-golf-association/
-- Auto Dealers Associations
-	- https://hiousa.com/partners/minnesota-auto-dealers-association/
-	- https://hiousa.com/partners/michigan-auto-dealers-association/
-####non-standard page layouts
-- https://hiousa.com/partners/marketcenter/
-- https://hiousa.com/partners/topgolf/
-####PGA Pages
-- https://hiousa.com/partners/carolinas-pga-section/
-- https://hiousa.com/partners/central-new-york-pga-section/
-- https://hiousa.com/partners/colorado-pga-section/
-- https://hiousa.com/partners/gateway-pga-section/
-- https://hiousa.com/partners/georgia-pga-section/
-- https://hiousa.com/partners/gulf-states-pga-section/
-- https://hiousa.com/partners/kentucky-pga-section/
-- https://hiousa.com/partners/middle-atlantic-pga-section/
-- https://hiousa.com/partners/midwest-pga-section/
-- https://hiousa.com/partners/minnesota-pga-section/
-- https://hiousa.com/partners/new-england-pga-section/
-- https://hiousa.com/partners/new-jersey-pga-section/
-- https://hiousa.com/partners/north-florida-pga-section/
-- https://hiousa.com/partners/northern-california-pga-section/
-- https://hiousa.com/partners/pacific-northwest-pga-section/
-- https://hiousa.com/partners/philadelphia-pga-section/
-- https://hiousa.com/partners/south-florida-pga-section/
-- https://hiousa.com/partners/southern-california-pga-section/
-- https://hiousa.com/partners/southern-ohio-pga-section/
-- https://hiousa.com/partners/southern-texas-pga-section/
-- https://hiousa.com/partners/southwest-pga-section/
-- https://hiousa.com/partners/sun-country-pga-section/
-- https://hiousa.com/partners/tennessee-pga-section/
-- https://hiousa.com/partners/tri-state-pga-section/
-- https://hiousa.com/partners/wisconsin-pga-section/
+- [https://hiousa.com/partners/toyota-lexus/](https://hiousa.com/partners/toyota-lexus/)
+- [https://hiousa.com/partners/honda-acura-emall/](https://hiousa.com/partners/honda-acura-emall/)
+- [https://hiousa.com/partners/folds-of-honor/](https://hiousa.com/partners/folds-of-honor/)
+- [https://hiousa.com/partners/GTAA/](https://hiousa.com/partners/GTAA/)
+- [https://hiousa.com/partners/southern-california-golf-association/](https://hiousa.com/partners/southern-california-golf-association/)
+
+**Auto Dealers Associations**
+- [https://hiousa.com/partners/minnesota-auto-dealers-association/](https://hiousa.com/partners/minnesota-auto-dealers-association/)
+- [https://hiousa.com/partners/michigan-auto-dealers-association/](https://hiousa.com/partners/michigan-auto-dealers-association/)
+
+#### Non-standard page layouts
+- [https://hiousa.com/partners/marketcenter/](https://hiousa.com/partners/marketcenter/)
+- [https://hiousa.com/partners/topgolf/](https://hiousa.com/partners/topgolf/)
+
+#### PGA Pages
+- [https://hiousa.com/partners/carolinas-pga-section/](https://hiousa.com/partners/carolinas-pga-section/)
+- [https://hiousa.com/partners/central-new-york-pga-section/](https://hiousa.com/partners/central-new-york-pga-section/)
+- [https://hiousa.com/partners/colorado-pga-section/](https://hiousa.com/partners/colorado-pga-section/)
+- [https://hiousa.com/partners/gateway-pga-section/](https://hiousa.com/partners/gateway-pga-section/)
+- [https://hiousa.com/partners/georgia-pga-section/](https://hiousa.com/partners/georgia-pga-section/)
+- [https://hiousa.com/partners/gulf-states-pga-section/](https://hiousa.com/partners/gulf-states-pga-section/)
+- [https://hiousa.com/partners/kentucky-pga-section/](https://hiousa.com/partners/kentucky-pga-section/)
+- [https://hiousa.com/partners/middle-atlantic-pga-section/](https://hiousa.com/partners/middle-atlantic-pga-section/)
+- [https://hiousa.com/partners/midwest-pga-section/](https://hiousa.com/partners/midwest-pga-section/)
+- [https://hiousa.com/partners/minnesota-pga-section/](https://hiousa.com/partners/minnesota-pga-section/)
+- [https://hiousa.com/partners/new-england-pga-section/](https://hiousa.com/partners/new-england-pga-section/)
+- [https://hiousa.com/partners/new-jersey-pga-section/](https://hiousa.com/partners/new-jersey-pga-section/)
+- [https://hiousa.com/partners/north-florida-pga-section/](https://hiousa.com/partners/north-florida-pga-section/)
+- [https://hiousa.com/partners/northern-california-pga-section/](https://hiousa.com/partners/northern-california-pga-section/)
+- [https://hiousa.com/partners/pacific-northwest-pga-section/](https://hiousa.com/partners/pacific-northwest-pga-section/)
+- [https://hiousa.com/partners/philadelphia-pga-section/](https://hiousa.com/partners/philadelphia-pga-section/)
+- [https://hiousa.com/partners/south-florida-pga-section/](https://hiousa.com/partners/south-florida-pga-section/)
+- [https://hiousa.com/partners/southern-california-pga-section/](https://hiousa.com/partners/southern-california-pga-section/)
+- [https://hiousa.com/partners/southern-ohio-pga-section/](https://hiousa.com/partners/southern-ohio-pga-section/)
+- [https://hiousa.com/partners/southern-texas-pga-section/](https://hiousa.com/partners/southern-texas-pga-section/)- [https://hiousa.com/partners/southwest-pga-section/](https://hiousa.com/partners/southwest-pga-section/)
+- [https://hiousa.com/partners/sun-country-pga-section/](https://hiousa.com/partners/sun-country-pga-section/)
+- [https://hiousa.com/partners/tennessee-pga-section/](https://hiousa.com/partners/tennessee-pga-section/)
+- [https://hiousa.com/partners/tri-state-pga-section/](https://hiousa.com/partners/tri-state-pga-section/)
+- [https://hiousa.com/partners/wisconsin-pga-section/](https://hiousa.com/partners/wisconsin-pga-section/)
+
 
 ### 2025-05-29 – Project Update
 
