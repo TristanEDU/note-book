@@ -147,6 +147,7 @@ Note that I broke these up into sections based on what type of page they are
 
 #### Standard affiliate page layout
 Note that I will put the PGA pages in their own section
+
 - [https://hiousa.com/partners/toyota-lexus/](https://hiousa.com/partners/toyota-lexus/)
 - [https://hiousa.com/partners/honda-acura-emall/](https://hiousa.com/partners/honda-acura-emall/)
 - [https://hiousa.com/partners/folds-of-honor/](https://hiousa.com/partners/folds-of-honor/)
@@ -181,7 +182,8 @@ Note that I will put the PGA pages in their own section
 - [https://hiousa.com/partners/south-florida-pga-section/](https://hiousa.com/partners/south-florida-pga-section/)
 - [https://hiousa.com/partners/southern-california-pga-section/](https://hiousa.com/partners/southern-california-pga-section/)
 - [https://hiousa.com/partners/southern-ohio-pga-section/](https://hiousa.com/partners/southern-ohio-pga-section/)
-- [https://hiousa.com/partners/southern-texas-pga-section/](https://hiousa.com/partners/southern-texas-pga-section/)- [https://hiousa.com/partners/southwest-pga-section/](https://hiousa.com/partners/southwest-pga-section/)
+- [https://hiousa.com/partners/southern-texas-pga-section/](https://hiousa.com/partners/southern-texas-pga-section/)
+- [https://hiousa.com/partners/southwest-pga-section/](https://hiousa.com/partners/southwest-pga-section/)
 - [https://hiousa.com/partners/sun-country-pga-section/](https://hiousa.com/partners/sun-country-pga-section/)
 - [https://hiousa.com/partners/tennessee-pga-section/](https://hiousa.com/partners/tennessee-pga-section/)
 - [https://hiousa.com/partners/tri-state-pga-section/](https://hiousa.com/partners/tri-state-pga-section/)
@@ -254,3 +256,142 @@ Note that I will put the PGA pages in their own section
 We are now ready to begin **Milestone 2: Environment Setup on WP Engine**.
 
 
+### 2025-05-29 – 17:21 PT – Milestone 2 Started: Environment Setup
+
+**Focus:** Resetting WP Engine environment and preparing clean install of WordPress for rebuild
+
+#### ✅ Completed Tasks
+- Locked final site layout count and rebuild scope (Milestone 1)
+- Chose to start with a fresh WordPress install on WP Engine
+
+#### 🔄 In Progress
+- Wiping existing WP content, config, and database
+- Installing WordPress and configuring initial settings
+
+#### 📌 Next Steps
+- Install core plugins (Elementor, UAE, WPForms)
+- Set up Hello Elementor theme
+- Prepare global settings (colors, fonts, spacing)
+
+---
+
+## 🧼 Environment Reset Plan
+
+### 1. Reset WP Engine Dev Environment
+- [ ] Use WP Engine “Reset Environment” feature or manually:
+  - Delete `/wp-content` folder via SFTP
+  - Remove `wp-config.php` customizations
+  - Clear database tables (via phpMyAdmin or WP CLI)
+
+### 2. Fresh WordPress Setup
+- [ ] Reinstall latest WordPress version
+- [ ] Set permalink structure to `/%postname%/`
+- [ ] Remove default content and themes/plugins
+
+### 3. Install Core Plugins
+- [ ] Elementor (Free)
+- [ ] Ultimate Addons for Elementor (UAE)
+- [ ] WPForms Lite (or Formidable Forms)
+- [ ] SEO plugin (optional)
+- [ ] WP Reset (optional, for quick wipes during dev)
+
+### 4. Theme & Settings
+- [ ] Activate Hello Elementor theme
+- [ ] Set site language, timezone, and favicon
+- [ ] (Optional) Enable maintenance mode during dev
+
+---
+
+##Random non gpt notes
+9:50 PST I used “Export Media Library” by Mass Edge Inc. to export the entire media library from the staging env while I am waiting for the dev env to finesh reseting. I exported them as a zip file to my local downloads.
+The current system uses Quick Rdirects plugin to manage all of its redirects so I exported all of the redirects as a PIPE seperated text file again I sent this to my downloads folder.
+
+## 2025-05-29 – 20:48 PT – Milestone 2 Logged: Full Dev Environment Reset Completed
+
+**Focus:** Resetting WP Engine Dev environment and preparing clean WP install for rebuild
+
+#### ✅ Completed Tasks
+- Created backup of existing dev environment
+- Dropped all database tables in `wp_hiousadev`
+- Connected via SFTP using FileZilla
+- Deleted core WP folders and root-level files
+- Reconfigured FileZilla for optimal transfer performance
+- Engaged WP Engine support to finalize full reset
+- Logged into clean WordPress install and began base configuration
+
+#### 🔄 In Progress
+- Installing base plugins and setting up Elementor global styles
+
+#### 📌 Next Steps
+- Configure global site values (color palette, fonts, spacing)
+- Build header and footer templates using UAE
+- Begin Milestone 3: Global Styles + Header/Footer Setup
+
+---
+
+## ✅ Reset & Clean Rebuild Setup – Timeline Summary
+
+⏱️ Estimated Duration: ~2.5 to 3 hours
+
+| Step | Action | Time | Timestamp |
+|------|--------|------|-----------|
+| 1 | Backup created via WP Engine | ~5 min | T+0:00 |
+| 2 | Dropped all DB tables via phpMyAdmin | ~5 min | T+0:05 |
+| 3 | Connected via SFTP using FileZilla | ~15 min | T+0:10–0:25 |
+| 4 | Deleted `/wp-admin/`, `/wp-includes/`, `/wp-content/`, and root files | ~45 min | T+0:25–1:10 |
+| 5 | Optimized FileZilla settings | ~10 min | T+1:10–1:20 |
+| 6 | Retried wp-content deletion (failed) | ~10 min | T+1:20–1:30 |
+| 7 | Contacted WP Engine support and submitted reset request | ~30 min | T+1:30–2:00 |
+| 8 | WP Engine reset environment successfully | ~10 min | T+2:00–2:10 |
+| 9 | Logged into clean WP site and configured settings | ~20 min | T+2:10–2:30 |
+
+---
+
+## 🧼 Final Status
+
+- ✅ Clean WP install on WP Engine (`hiousadev`)
+- ✅ No leftover files or DB clutter
+- ✅ Ready to rebuild using Hello Elementor + UAE
+
+### 2025-05-29 – 21:07 PT – Milestone 3 Started: Global Styles & Template Framework
+
+**Focus:** Initiated foundational style setup (colors, fonts, spacing) and base template structure in Elementor
+
+#### ✅ Completed Tasks
+- Completed WP Engine dev reset and clean install (Milestone 2)
+- Logged in to WP and began transferring media assets
+
+#### 🔄 In Progress
+- Uploading media assets to WordPress Media Library
+- Preparing global styles (color palette, typography)
+- Planning header and footer layout using UAE
+
+#### 📌 Next Steps
+- Finalize Elementor site-wide global colors and fonts
+- Create header template with UAE (sticky + responsive)
+- Create footer template with UAE (navigation + contact + legal links)
+- Save templates for reuse across the rebuild
+
+---
+
+## 🎨 Milestone 3 – Global Styles + Header/Footer Framework
+
+### 1. Global Style Configuration
+- [ ] Define brand color palette (Hex or theme color names)
+- [ ] Set up font pairings (headings + body text)
+- [ ] Set base spacing system (section padding, column gap, margins)
+- [ ] Configure Elementor global settings
+
+### 2. Header Template (UAE Builder)
+- [ ] Build responsive header structure (logo, nav, CTA)
+- [ ] Enable sticky behavior (optional)
+- [ ] Mobile-friendly menu toggle
+
+### 3. Footer Template (UAE Builder)
+- [ ] Add 2–3 column layout (nav links, contact, logo, copyright)
+- [ ] Insert privacy policy / terms links
+- [ ] Ensure mobile responsiveness
+
+---
+
+Let me know once the media upload is complete or if you want help defining your global color and font values before continuing with header/footer design.
