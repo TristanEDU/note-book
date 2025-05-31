@@ -476,3 +476,13 @@ The current system uses Quick Rdirects plugin to manage all of its redirects so 
 - **Line Height:** `1.5`
 - **Headings Weight:** `700` (h1–h3), `600` (h4–h6)
 
+##UAE Header
+I am working on the header template right now. I had to add the other header pages to get them to show. 
+- header max height 135px
+- nav bar 
+I have been having a really hard time with the header styling due to the weird and convaluded application of css including a lot of use of the `!important` tag... I actually built a google exstinsion to help me visulize it. 
+okay after a lot of trial and error I was able to get the purely asthetic part of the header looking correct. Now I need to get the drop down to style right and the buttons
+
+Ok got it now I am on to the footer.
+I am wrapping up with the footer for the evening. I have the basic layout setup but am having some trouble with the social icons
+
