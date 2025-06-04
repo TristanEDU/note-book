@@ -486,3 +486,83 @@ okay after a lot of trial and error I was able to get the purely asthetic part o
 Ok got it now I am on to the footer.
 I am wrapping up with the footer for the evening. I have the basic layout setup but am having some trouble with the social icons
 
+### 2025-05-29 – 21:42 PT – Font Integration + Milestone 3 Progress Catch-Up
+
+**Focus:** Integrated Myriad Pro via Typekit workaround and progressed toward header/footer design foundation
+
+#### ✅ Completed Tasks
+- Completed media upload to WordPress
+- Integrated Myriad Pro using Typekit plugin workaround
+- Began configuring Elementor Global Styles
+
+#### 🔄 In Progress
+- Finalizing font and color variables in global styles
+- Designing header and footer templates in UAE
+- Reviewing layout spacing and mobile behavior
+
+#### 📌 Next Steps
+- Confirm final global color palette (Hex or CSS vars)
+- Build header: logo, nav, CTA, mobile toggle
+- Build footer: contact info, nav, legal, logo
+
+---
+
+## 🔡 Font Setup Note: Myriad Pro (via Typekit Workaround)
+
+- Plugin Used: **Custom Adobe Fonts (Typekit)**
+- Method:
+  - Extracted CSS project ID from known Typekit embed URL:  
+    `https://use.typekit.net/fqf3yti.css`
+  - Entered **`fqf3yti`** into the plugin’s “Project ID” field
+  - Font now globally available in Elementor as **Myriad Pro**
+- No direct Adobe account access was required
+- Fallback font stack can be set in Elementor (e.g., `Myriad Pro, sans-serif`)
+
+---
+
+### 2025-05-29 – 22:18 PT – Milestone 3 Status & Transition to Page Rebuilds
+
+**Focus:** Partial completion of global style setup, header/footer templates in place, page rebuilds now underway
+
+#### ✅ Completed Tasks
+- Uploaded all media to new WordPress site
+- Integrated Myriad Pro via Adobe Fonts Typekit workaround
+- Built and assigned desktop versions of:
+  - UAE Header (non-sticky, matching original layout and color)
+  - UAE Footer (includes nav, contact, legal links, branding)
+
+#### 🔄 In Progress
+- Configuring Elementor global colors, typography, spacing (in parallel with build)
+- Responsive adjustments for header and footer (mobile layout pending)
+- Rebuilding individual pages based on new structure and templates
+
+#### 📌 Next Steps
+- Apply mobile responsiveness to header and footer
+- Complete global button and text styles once layout patterns are established
+- Continue page-by-page rebuild following layout groupings (Milestone 4)
+
+---
+
+## 🧩 Milestone 3 Snapshot
+
+| Component         | Status         | Notes                                             |
+|------------------|----------------|---------------------------------------------------|
+| Global Colors     | In Progress    | Will be finalized as build progresses             |
+| Typography        | In Progress    | Myriad Pro active, sizing/weights TBD             |
+| Spacing System    | Initial pass   | Will be revised during layout tuning              |
+| Buttons           | Not complete   | Global styles pending                             |
+| Header (UAE)      | ✅ Desktop done | Matches original; not sticky                      |
+| Footer (UAE)      | ✅ Desktop done | Fully matches original footer                     |
+| Mobile Responsiveness | ❌ Not started | Needs layout review                               |
+| Custom CSS        | ❌ None used    | CSS-free as of this milestone                     |
+
+---
+
+## 🔀 Transition to Milestone 4: Rebuild Core Pages
+
+You are now beginning the page-by-page rebuild process.  
+Let me know when you want to:
+- Log your first completed page(s)
+- Break down Milestone 4 into a live checklist
+- Start QA passes on mobile/responsive versions
+
