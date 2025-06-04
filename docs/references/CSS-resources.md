@@ -15,4 +15,6 @@
 
 ###Positioning
 - **Relitive** When you are using values to set the Relitive position they are measured from the parent element in the flow of the document. This means when you set a position as `.div {Position: relitive; Top: 100px; Left: 100px;` the top of the element is 100 pixels down from the top of its parent and the left side of the element in 100 pixels left of it's original position.
-- **Fixed** When using the fixed position the units are measured from the corasponding sides of the parent containereg 100 pixels down from the top of the parent and 100 pixels left of the parents left... 
+- **Fixed** When using the fixed position the units are measured from the corasponding sides of the parent containereg 100 pixels down from the top of the parent and 100 pixels left of the parents left...
+
+For a practical example, see the [Robot Face notes](../projects/robot-face.md).
