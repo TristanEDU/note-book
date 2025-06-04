@@ -1,20 +1,11 @@
-# Welcome to MkDocs
+# Note Book
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Welcome to my personal wiki. This site holds notes about projects, research, and day-to-day discoveries. Everything is organized with [MkDocs](https://www.mkdocs.org) and published online so that I can easily reference it anywhere.
 
-## Commands
+## Main sections
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- [Jobs](jobs/) – details and lessons from various professional engagements.
+- [References](references/) – a collection of guides and external resources I frequently consult.
+- [Timeline](Timeline/) – chronological entries that track progress over time.
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-
-
-Testing
+Explore the sections above or use the navigation to browse other topics.
