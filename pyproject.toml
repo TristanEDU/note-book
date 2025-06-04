@@ -1,9 +1,9 @@
 [project]
-name = ""
-version = ""
-description = ""
+name = "note-book"
+version = "0.1.0"
+description = "Personal digital garden built with MkDocs"
 authors = [
-    {name = "Lyz", email = "lyz@riseup.net"},
+    {name = "Tristan Thomas", email = "tristanedu@protonmail.com"},
 ]
 dependencies = [
     "mkdocs",
@@ -19,10 +19,10 @@ dependencies = [
     "mkdocs-exclude-search>=0.6.4",
 ]
 requires-python = ">=3.9"
-license = {text = "MIT"}
+license = {text = "CC0-1.0"}
 
 [project.urls]
-Homepage = ""
+Homepage = "https://tristanedu.github.io/note-book/"
 
 [tool]
 [tool.pdm]
