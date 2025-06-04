@@ -1,3 +1,3 @@
-# CSS Relitive units and how they relate
+# CSS Relative units and how they relate
 
 

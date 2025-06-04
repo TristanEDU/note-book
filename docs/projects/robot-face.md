@@ -1,11 +1,11 @@
 #Robot Face
 
-- Russ said to look at abosolute positioning and z-index for blood drops
-- Amber said to read this [article on droplet effect](https://deothemes.com/css-animated-rain-drop-effect/) She specificly said to read it line by line.
+- Russ said to look at absolute positioning and z-index for blood drops
+- Amber said to read this [article on droplet effect](https://deothemes.com/css-animated-rain-drop-effect/) She specifically said to read it line by line.
 
 
 ###Hair
-- I am trying to position the element with the class of ".robot-hair-style" on top of ".robot-face-shape" the image below shows what it is now. I beleive the best way to do this is to use a relitive position but I am wondering how you can get it right without trial and error... I feel that there should be a way to acomplish this without that. ![Robot face befor hair is moved](../assets/Robot-face-pre-hair-positioned.png)
+- I am trying to position the element with the class of ".robot-hair-style" on top of ".robot-face-shape" the image below shows what it is now. I believe the best way to do this is to use a relative position but I am wondering how you can get it right without trial and error... I feel that there should be a way to accomplish this without that. ![Robot face before hair is moved](../assets/Robot-face-pre-hair-positioned.png)
 - It did work to do it that way using the code 
 ```.robot-hair-style {
   position: relative;
@@ -13,7 +13,7 @@
   top: -50vh;
 }```
 however I was surprised by the needing to use `-50vh` for the vertical positioning... I had was guessing that it would have been closer to `10vh`. As of yet I have not been able to figure out why this is. In my current understanding `top: 10vh;` indicates that it will position from the top of the viewport 10 vh units down to the top of the element being positioned. ![Robot face after hair is positioned](../assets/Robot-face-post-hair-positioned.png)
-- It still does not scale the way I want it to but it does give me some range of flexibility. I think that a possible update would be to use the font size we set in `robot-container` and use rem similer to the way we made the hair properly scale but I do not understand that enough yet to be sure. It is also possible that we could use absolute and figure out how to give it a position relitive to the face... 
+- It still does not scale the way I want it to but it does give me some range of flexibility. I think that a possible update would be to use the font size we set in `robot-container` and use rem similar to the way we made the hair properly scale but I do not understand that enough yet to be sure. It is also possible that we could use absolute and figure out how to give it a position relative to the face... 
 
 
 ###LH Ear
@@ -92,14 +92,14 @@ I am working on the LH ear and I used the code snippet found below that I got fr
 
 </details>
 
-- In the `.tooltip:after` section my W3C validation came up with a problem on the second to last line with the simi-colon... it apears that it is causing a parse error which I suspect is also why it is not rendering in the browser. ![screen shot of the problem](../assets/Robot-face-clip-path-error.png)
-	- The issue with the rendering turned out to be a result of not saving the the class changes to my HTML...
+- In the `.tooltip:after` section my W3C validation came up with a problem on the second to last line with the semi-colon... it appears that it is causing a parse error which I suspect is also why it is not rendering in the browser. ![screen shot of the problem](../assets/Robot-face-clip-path-error.png)
+	- The issue with the rendering turned out to be a result of not saving the class changes to my HTML...
 	- I am still unsure as to the issue with the clip-path. As best I can till the syntax is correct
 
-- It apears that the changes to the ear have affected the positioning of the my hair element. I think that I may need to re-evaluate my aproach to positioning it. It is possible that I may be able to fix this by changing the positioning of the `.tooltip` element however I think that it will be better to fix the hair first. ![Before issue](../assets/Robot-face-post-hair-positioned.png)![After issue](../assets/Robot-face-hair-after-LHear.png)
+- It appears that the changes to the ear have affected the positioning of my hair element. I think that I may need to re-evaluate my approach to positioning it. It is possible that I may be able to fix this by changing the positioning of the `.tooltip` element however I think that it will be better to fix the hair first. ![Before issue](../assets/Robot-face-post-hair-positioned.png)![After issue](../assets/Robot-face-hair-after-LHear.png)
 
 ###Hair cont.
-- I think that I need to use either Fixed or absolute... Probably fixed. I do not under stand why relitive is not working aside that it has to do with how it plays off of the other elements right before it. Here is the current code:
+- I think that I need to use either Fixed or absolute... Probably fixed. I do not understand why relative is not working aside that it has to do with how it plays off of the other elements right before it. Here is the current code:
 <details>
   <summary>Click to expand code snippet</summary>
 
@@ -129,17 +129,17 @@ I am working on the LH ear and I used the code snippet found below that I got fr
 
 </details>
 
-- The issue is when I change the positioning to absolute, fixed or sticky it disapears everywhere. I cant even find in it in the dev tools. ~This may be a result of using relitive units when I was doing this...~ *Nevermind that was not the issue it does the same thing when I use pixels as well.* 
-	- It turned out that I needed to manually set the width and aperently a second top of the `.robot-hair-style`. This makes it visible but does not fix the relitive positioning and I find the extra top selector very odd... ![without the top selector](../assets/Robot-face-without-top.png) ![with the top selector](../assets/Robot-face-with-top.png)
-	- It turns out that I need to remove the top selector that makes it negitive as when I changed the positioning scheme from relitive to fixed this caused the point where top was being measured from to change [*see css-refernce note*](../references/CSS-resources.md). I still do not understand why width does not work and I would still like to figure out how to make this responsive but I may leave that for another time...
-	- I figured out what the issue is, I had a faulty understanding of how `position: relitive;` and `position: fixed;` worked. As it turns out relitive measures from it's parent container which means that I was positioning my hair off screen.
+- The issue is when I change the positioning to absolute, fixed or sticky it disappears everywhere. I can't even find it in the dev tools. ~This may be a result of using relative units when I was doing this...~ *Nevermind that was not the issue it does the same thing when I use pixels as well.* 
+	- It turned out that I needed to manually set the width and apparently a second top of the `.robot-hair-style`. This makes it visible but does not fix the relative positioning and I find the extra top selector very odd... ![without the top selector](../assets/Robot-face-without-top.png) ![with the top selector](../assets/Robot-face-with-top.png)
+	- It turns out that I need to remove the top selector that makes it negative as when I changed the positioning scheme from relative to fixed this caused the point where top was being measured from to change [*see css-reference note*](../references/CSS-resources.md). I still do not understand why width does not work and I would still like to figure out how to make this responsive but I may leave that for another time...
+	- I figured out what the issue is, I had a faulty understanding of how `position: relative;` and `position: fixed;` worked. As it turns out relative measures from its parent container which means that I was positioning my hair off screen.
 
 ###LH Ear
-- I transitioned everything to `position: fixed;` which has fixed most of my issues and then I positiond everything by the side closest to the robot face *eg. LH ear is position from the right...*
-- The position fixed has fixed everything aside from my issue with the hair not centering properly when I shrink the screen to much.
+- I transitioned everything to `position: fixed;` which has fixed most of my issues and then I positioned everything by the side closest to the robot face *eg. LH ear is positioned from the right...*
+- The position fixed has fixed everything aside from my issue with the hair not centering properly when I shrink the screen too much.
 
 ##Robot in General
-Overal I am happy with it there is still a positioning issue when you magorly change the size of the screen as the screen shots below show. I am not sure that they can be fixed while still staying inside of the project guidlines.
+Overall I am happy with it there is still a positioning issue when you majorly change the size of the screen as the screen shots below show. I am not sure that they can be fixed while still staying inside of the project guidelines.
 ![Robot face 1](../assets/Robot-face1.png) ![Robot face 2](../assets/Robot-face2.png)
 
 ####HTML
