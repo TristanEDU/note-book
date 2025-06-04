@@ -1,5 +1,7 @@
 # 🧠 In-Depth Training Plan for Client Call (GoHighLevel + Marketing Systems)
 
+For project background, see the [e9digital overview](./e9digital-overview.md).
+
 ## 📅 3-Day Intensive Schedule
 
 ---
