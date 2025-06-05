@@ -834,3 +834,82 @@ hio-quick-quote label {
 - The current state of the homepage is content-complete but visually unstyled. Typography is using Elementor’s system defaults (not Myriad Pro), and spacing between elements has not yet been aligned to the legacy site. All button widgets are present but need padding, font, and color adjustments. None of the global styles have been applied yet — colors, fonts, and responsive behavior are all pending. There is no animation or motion on scroll, and mobile responsiveness has not yet been addressed. The layout currently looks functional in desktop preview mode but does not visually match the original pixel-for-pixel.
 
 - The next phase will focus entirely on styling and refinement. The layout spacing will be adjusted to match the visual rhythm of the original site, and global styles will be applied for typography and color. Each section will be restyled individually, with attention to margin, padding, alignment, and font consistency. Mobile views will be addressed after desktop styling is finalized. Once the homepage is visually complete, we’ll move on to rebuilding the other core pages using the same system of structured, code-free Elementor blocks.
+
+
+I would like to note that it would be a good idea to properly style the form at its source instead of using `!important` like we have had too. Below is the finel version of the code that I putin `Apearence > Customize > Custom CSS`
+
+```/* ===============================
+   🎯 Quick Quote Form Layout Tweaks
+   =============================== */
+
+/* Add horizontal padding to the main quote form container */
+hio-quick-quote .quick-quotes-app .form-container {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+/* Add margin to the quote form title block */
+hio-quick-quote .quick-quotes-app .quote-form-title {
+    margin-left: 34px;
+    margin-right: 34px;
+}
+
+/* Add margin to the quote management section */
+hio-quick-quote .quick-quotes-app .quote-management {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+/* Soft blue background for the quote form container */
+hio-quick-quote .quick-quotes-app {
+    background: rgba(240, 247, 252, 0.85);
+}
+
+/* Adjust height for select and input fields */
+hio-quick-quote .quick-quotes-app .form-control-select,
+hio-quick-quote .quick-quotes-app .form-control {
+    height: auto !important;
+}
+
+/* Set text and background colors for the form title */
+hio-quick-quote .quick-quotes-app .quote-form-title {
+    color: #ffffff;
+    background-color: #d02b2f !important;
+}
+
+/* Button color styling */
+hio-quick-quote .quick-quotes-app .btn-quote {
+    color: #ffffff !important;
+    background-color: #d02b2f !important;
+}
+
+/* Quote form label spacing and font size */
+hio-quick-quote .quick-quotes-app label {
+    margin-bottom: 0.96rem;
+    margin-top: 0.96rem;
+    font-size: 15px;
+}
+
+/* Adjust margin for error icon display */
+hio-quick-quote .quick-quotes-app .material-icons.md-error {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Add top padding to date field column */
+hio-quick-quote div.form-group.col.date {
+    padding-top: 10px;
+}
+
+/* ===============================
+   📦 Quote App Container Padding
+   =============================== */
+
+/* Extra bottom padding for the quote app */
+div#pl-5 div#quick-quotes-app {
+    padding-bottom: 62px !important;
+}
+```
+
+I am currently working on styling the image...
+
