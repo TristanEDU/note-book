@@ -825,3 +825,12 @@ hio-quick-quote label {
 
 *This documentation should be included in the HIOUSA Rebuild Git repo and tagged as a reference for future embedded Angular form styling work.*
 
+### 2025-06-04 – 19:27 PT – Home Page Content Added
+
+- The entire homepage structure has now been rebuilt inside Elementor, matching the original layout from hiousa.com section by section. All primary content blocks have been recreated using Elementor’s default widgets — including text, images, callouts, headings, and divider elements. This includes the hero image and tagline, coverage and prize explanation blocks, visual separators, testimonial area, and the final contact call-to-action. As of this point, all visible content that was part of the original homepage is now present in the rebuild.
+
+- Special care was taken to ensure that no custom code or unnecessary plugins were introduced during this process. The structure is built entirely using native Elementor widgets to keep things as lightweight and maintainable as possible. This will also ensure future updates to Elementor and UAE remain compatible. All media files used on the homepage were uploaded earlier in the project and are now properly placed in their respective sections. The image sizes and positions are currently unstyled and will need to be adjusted during the layout phase.
+
+- The current state of the homepage is content-complete but visually unstyled. Typography is using Elementor’s system defaults (not Myriad Pro), and spacing between elements has not yet been aligned to the legacy site. All button widgets are present but need padding, font, and color adjustments. None of the global styles have been applied yet — colors, fonts, and responsive behavior are all pending. There is no animation or motion on scroll, and mobile responsiveness has not yet been addressed. The layout currently looks functional in desktop preview mode but does not visually match the original pixel-for-pixel.
+
+- The next phase will focus entirely on styling and refinement. The layout spacing will be adjusted to match the visual rhythm of the original site, and global styles will be applied for typography and color. Each section will be restyled individually, with attention to margin, padding, alignment, and font consistency. Mobile views will be addressed after desktop styling is finalized. Once the homepage is visually complete, we’ll move on to rebuilding the other core pages using the same system of structured, code-free Elementor blocks.
