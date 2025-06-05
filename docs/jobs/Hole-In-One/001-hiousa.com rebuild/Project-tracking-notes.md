@@ -566,3 +566,262 @@ Let me know when you want to:
 - Break down Milestone 4 into a live checklist
 - Start QA passes on mobile/responsive versions
 
+I am working on the custom quotes plugin right now. I am trying to figure out how to get it to apply. I was able to find the js document for it `quick-quotes-embed.min.js` and upload to to the root of the hiousadev site but I can not get it to apply for some reason. I am currently working with the custom html elementor block and am using the samecode that they used I though but for whatever reason I can not get it working...
+
+## 📝 Embedding the HIOUSA Quick Quote Form in Elementor
+
+### 🔧 How It Works
+The `quick-quotes-embed.min.js` script initializes a **Web Component** called `<hio-quick-quote>`. This component renders a fully interactive quote request form powered by Angular.
+
+### 🧩 Required HTML
+To embed the form in Elementor (Free version):
+
+```html
+<hio-quick-quote sitekey="58cd8cf3-ab56-4af7-8cd4-ad62b83d9032"></hio-quick-quote>
+<script src="https://hiousa.com/quick-quotes-embed.min.js"></script>
+```
+
+- Use the Elementor **HTML widget** to paste this code.
+- The `sitekey` is essential; it links the form to the correct backend API.
+- You **do not** need any `#quick-quote-container` div.
+
+### 💡 Notes
+- This is a **Web Component**, not a normal JavaScript form injection.
+- The script looks for the `<hio-quick-quote>` tag and mounts the form inside it.
+- Styling and layout can be controlled using Elementor sections and wrapping the component in a styled `<div>`.
+
+### ✅ Example with Centering
+```html
+<div style="text-align:center;">
+  <hio-quick-quote sitekey="58cd8cf3-ab56-4af7-8cd4-ad62b83d9032"></hio-quick-quote>
+</div>
+<script src="https://hiousa.com/quick-quotes-embed.min.js"></script>
+```
+
+### 🧪 Troubleshooting
+- Confirm the script URL returns a valid file (no 404).
+- If the form doesn’t render, open DevTools → Console and check for JS errors.
+- The form **must be placed on the page before the script loads**, or re-init logic must be added manually.
+
+---
+
+_Last verified working on the new Elementor-based rebuild at `hiousadev.wpenginepowered.com`._
+
+The long and short of it is that eventually I got the form working but it took a minute. Now I just have to figure out how styles are being applied it. According to the inspector it is from index in the root folder on line 125 for the header color... when I try to look at it from the devtools though it says it is unavailible and not cached... I will try to look in filezilla and see what I can find.
+
+# 🧾 Quote Form Style Extraction and Replication – Full Documentation
+
+## 🧭 Objective
+
+Recreate the embedded Angular-based quote form from the original Hole-In-One USA website (`hiousa.com`) in a modern Elementor-based environment (`hiousadev.wpenginepowered.com`) using Elementor Free and UAE Header Footer Builder — achieving **pixel-perfect accuracy** and maintaining **functional parity** without compromising WordPress theme stability.
+
+---
+
+## 🔍 Original Source
+
+### 📦 Script-Based Embedding
+
+The quote form is embedded using the following directive:
+
+```html
+<hio-quick-quote sitekey="58cd8cf3-ab56-4af7-8cd4-ad62b83d9032"></hio-quick-quote>
+<script src="https://hiousa.com/quick-quotes-embed.min.js"></script>
+```
+
+* The script `quick-quotes-embed.min.js` loads and renders a shadow-like Angular component.
+* DOM elements and internal styles are injected dynamically.
+* Styling is not isolated to a stylesheet but is instead procedurally applied via script execution.
+
+---
+
+## ❗ Challenges Faced
+
+### 1. **Dynamically Generated HTML**
+
+* The form markup is not present in the WordPress editor or Elementor backend.
+* Elements like `.nav-tabs`, `.form-group`, `.form-control`, and `.btn-quote` are dynamically injected after the script executes.
+
+### 2. **Minified and Embedded Styling**
+
+* All form-related styling is injected via `quick-quotes-embed.min.js`, which contains both logic and styles.
+* Traditional DevTools CSS file tracing showed `(index):138`, indicating inline or JS-appended stylesheets.
+
+### 3. **Style Extraction Difficulty**
+
+* Using `getComputedStyle` alone returned all browser-computed values — even inherited/default values — leading to extremely verbose, low-value output.
+* Resulting style dumps were unmanageable: 500+ lines of irrelevant or redundant styles.
+
+### 4. **Elementor Limitations**
+
+* Elementor Free does not allow full HTML control inside templates.
+* Solution needed to rely entirely on scoped CSS using Elementor's HTML widget or Site Settings → Custom CSS.
+
+---
+
+## 🧪 Strategy + Solution
+
+### 🔧 Phase 1: DOM Capture and Comparison
+
+* Inspected the fully rendered form via DevTools after `quick-quotes-embed.min.js` loaded.
+* Captured complete DOM output of the form using `document.querySelector('hio-quick-quote').innerHTML`.
+* Cross-referenced the **old site (hiousa.com)** and **new site (hiousadev.wpenginepowered.com)** side-by-side.
+
+### 🔍 Phase 2: Smart CSS Extraction
+
+#### Scripts Used:
+
+**Initial script**
+
+```js
+// Logged full computed styles
+const elements = document.querySelectorAll('hio-quick-quote *');
+elements.forEach(el => {
+  const styles = window.getComputedStyle(el);
+  console.log(el.tagName, el.className, styles);
+});
+```
+
+**Refined script**
+
+```js
+// Compare each element against a clean clone to get only effective styles
+function getEffectiveStyles(el) {
+  const defaultEl = document.createElement(el.tagName);
+  document.body.appendChild(defaultEl);
+  const computed = window.getComputedStyle(el);
+  const baseline = window.getComputedStyle(defaultEl);
+
+  const diff = {};
+  for (let i = 0; i < computed.length; i++) {
+    const key = computed[i];
+    if (computed.getPropertyValue(key) !== baseline.getPropertyValue(key)) {
+      diff[key] = computed.getPropertyValue(key);
+    }
+  }
+  defaultEl.remove();
+  return diff;
+}
+```
+
+### 📊 Phase 3: CSS Analysis + Prioritization
+
+* Focused only on:
+
+  * Layout styles (widths, flex, margins, paddings)
+  * Input styles (font, spacing, borders)
+  * Button styles (color, hover, alignment)
+  * Tab styles (`.nav-tabs`, `.nav-link.active`)
+
+* Excluded all default tag styles (e.g. inherited line-height, overflow, etc.)
+
+* Bundled computed CSS into `quote-form-effective-styles.json`
+
+---
+
+## 🎨 Final CSS Solution
+
+Scoped styling applied only within the `hio-quick-quote` component:
+
+```css
+hio-quick-quote .quick-quotes-app {
+  background: rgba(240, 247, 252, 0.85);
+}
+
+hio-quick-quote .form-container,
+hio-quick-quote .quote-form-title,
+hio-quick-quote .quote-management {
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+hio-quick-quote .quote-form-title {
+  background-color: #d02b2f !important;
+  color: #fff;
+}
+
+hio-quick-quote .btn-quote {
+  background-color: #d02b2f !important;
+  color: #fff !important;
+}
+
+hio-quick-quote .form-control,
+hio-quick-quote .form-control-select {
+  height: auto !important;
+}
+
+hio-quick-quote label {
+  margin: 0.96rem 0;
+  font-size: 15px;
+}
+
+.nav-tabs {
+  display: flex;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 30px;
+  min-height: 50px;
+}
+
+.nav-fill .nav-item {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: -1px;
+}
+
+.nav-tabs .nav-link {
+  display: block;
+  width: 100%;
+  padding: 14px 30px;
+  font-size: 16px;
+  height: auto !important;
+  background-color: #f1f1f1;
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+  color: #000;
+}
+```
+
+---
+
+## ✅ Final Outcome
+
+* Achieved pixel-perfect replication of the original quote form
+* Scoped CSS avoids global impact across the site
+* No plugin dependency or custom Elementor extensions required
+* All changes are maintainable and inline-editable from within the Elementor environment
+
+---
+
+## 📁 Supporting Files and Scripts
+
+| File                         | Purpose                             |
+| ---------------------------- | ----------------------------------- |
+| `quick-quotes-embed.min.js`  | Angular script rendering the form   |
+| `old-sites-quick-quotes.css` | Computed styles from original site  |
+| `New-sites-quick-quote.css`  | Computed styles from Elementor site |
+| `minimal-quote-form.css`     | Final custom style snippet          |
+| `style-inspector.js`         | Console tool to extract only deltas |
+
+---
+
+## 🔄 Next Steps
+
+* Paste cleaned CSS in **Appearance > Customize > Additional CSS** or Elementor Site Settings.
+* Test on mobile and tablet.
+* Lock in fonts via Adobe Fonts (Myriad Pro) as needed.
+* Back up styles in GitHub project or CSS file library.
+
+---
+
+*This documentation should be included in the HIOUSA Rebuild Git repo and tagged as a reference for future embedded Angular form styling work.*
+
