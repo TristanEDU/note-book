@@ -1,3 +1,9 @@
+---
+title: Meeting Preparation - e9digital (Tuesday, May 13)
+date: {{date}}
+tags: []
+---
+
 # Meeting Preparation - e9digital (Tuesday, May 13)
 
 ## Meeting Info

@@ -1,3 +1,9 @@
+---
+title: HIOUSA Design Review & Strategy
+date: {{date}}
+tags: []
+---
+
 # HIOUSA Design Review & Strategy
 
 Summary of the current site audit, UI/UX requirements, and visual design plans for the rebuild.

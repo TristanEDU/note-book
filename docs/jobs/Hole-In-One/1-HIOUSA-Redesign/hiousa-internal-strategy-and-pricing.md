@@ -1,3 +1,9 @@
+---
+title: HIOUSA Internal Strategy & Pricing
+date: {{date}}
+tags: []
+---
+
 # HIOUSA Internal Strategy & Pricing
 
 This document combines the rebuild strategy, internal planning, and proposed pricing for HIOUSA projects.

@@ -1,3 +1,9 @@
+---
+title: First Meeting With Conrad Stone
+date: {{date}}
+tags: []
+---
+
 #First Meeting With Conrad Stone
 
 - run some compaings for e9

@@ -1,3 +1,9 @@
+---
+title: Amy Fanter | Odds On Promotions
+date: {{date}}
+tags: []
+---
+
 #Amy Fanter | Odds On Promotions
 
 ##Job Posting

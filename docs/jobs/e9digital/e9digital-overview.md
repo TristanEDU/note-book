@@ -1,3 +1,9 @@
+---
+title: e9digital - Project Overview
+date: {{date}}
+tags: []
+---
+
 # e9digital - Project Overview
 
 ## Client

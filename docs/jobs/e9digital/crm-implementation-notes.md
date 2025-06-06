@@ -1,3 +1,9 @@
+---
+title: CRM Implementation - Technical Objectives
+date: {{date}}
+tags: []
+---
+
 # CRM Implementation - Technical Objectives
 
 ## High-Level Goals

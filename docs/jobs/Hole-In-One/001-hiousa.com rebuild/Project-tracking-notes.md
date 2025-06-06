@@ -1,3 +1,9 @@
+---
+title: Chronalogical tracking notes
+date: {{date}}
+tags: []
+---
+
 #Chronalogical tracking notes
 
 ##Thursday May 29, Setup and config.

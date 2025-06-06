@@ -1,3 +1,9 @@
+---
+title: ASAP Avionics Project Overview
+date: {{date}}
+tags: []
+---
+
 # ASAP Avionics Project Overview
 
 This file consolidates the site rebuild plan and initial meeting notes for the Cessna 182 project.

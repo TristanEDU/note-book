@@ -1,3 +1,9 @@
+---
+title: Jobs
+date: {{date}}
+tags: []
+---
+
 # Jobs
 
 Notes for client projects and freelance engagements. Each subfolder contains documents and meeting logs for a specific job.

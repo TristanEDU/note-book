@@ -1,3 +1,9 @@
+---
+title: Robot Face
+date: {{date}}
+tags: []
+---
+
 #Robot Face
 
 - Russ said to look at abosolute positioning and z-index for blood drops
