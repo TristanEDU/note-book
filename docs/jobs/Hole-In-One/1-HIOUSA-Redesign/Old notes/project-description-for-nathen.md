@@ -1,3 +1,9 @@
+---
+title: HIOUSA Project Overview – Client Inputs & Research Summary <sub>GPT generated portion, may be inacurate</sub>
+date: {{date}}
+tags: []
+---
+
 # HIOUSA Project Overview – Client Inputs & Research Summary <sub>GPT generated portion, may be inacurate</sub>
 
 ---

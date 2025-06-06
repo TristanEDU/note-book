@@ -1,3 +1,9 @@
+---
+title: ROI
+date: {{date}}
+tags: []
+---
+
 ###ROI
 - track everything, especialy it is digital
 - you need quantity and quality

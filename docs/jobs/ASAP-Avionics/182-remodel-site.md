@@ -1,3 +1,9 @@
+---
+title: 182 Remodeling
+date: {{date}}
+tags: []
+---
+
 #182 Remodeling
 ######This is a note for the potential job of making a sit for remodeling 182 aircraft. The project specs are in the linked doc below.
 [Project Description](../assets/Aircraft_Website_Design_Brief.pdf)

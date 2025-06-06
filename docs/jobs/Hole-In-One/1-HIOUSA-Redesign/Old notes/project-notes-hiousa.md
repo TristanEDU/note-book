@@ -1,3 +1,9 @@
+---
+title: WordPress Project Notes – HIOUSA.com
+date: {{date}}
+tags: []
+---
+
 #### WordPress Project Notes – HIOUSA.com
 
 **Current Goal:**
