@@ -835,194 +835,128 @@ hio-quick-quote label {
 
 - The next phase will focus entirely on styling and refinement. The layout spacing will be adjusted to match the visual rhythm of the original site, and global styles will be applied for typography and color. Each section will be restyled individually, with attention to margin, padding, alignment, and font consistency. Mobile views will be addressed after desktop styling is finalized. Once the homepage is visually complete, we’ll move on to rebuilding the other core pages using the same system of structured, code-free Elementor blocks.
 
-
-I would like to note that it would be a good idea to properly style the form at its source instead of using `!important` like we have had too. Below is the finel version of the code that I putin `Apearence > Customize > Custom CSS`
-
-```/* ===============================
-   🎯 Quick Quote Form Layout Tweaks
-   =============================== */
-
-/* Add horizontal padding to the main quote form container */
-hio-quick-quote .quick-quotes-app .form-container {
-    padding-left: 32px;
-    padding-right: 32px;
+I want to note that for the quick quotes it would be best practice if the original form was styled properly at some point in the future instead of contenuing to add `!important` in the custom css section and styling it the way we want to from there.```
+/* ============================================= */
+/* === Quick Quotes Form Styling (Container) === */
+/* ============================================= */
+.col-md-5 hio-quick-quote {
+	font-family: myriad-pro, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 29.6px;
+	text-size-adjust: 100%;
 }
 
-/* Add margin to the quote form title block */
-hio-quick-quote .quick-quotes-app .quote-form-title {
-    margin-left: 34px;
-    margin-right: 34px;
-}
-
-/* Add margin to the quote management section */
-hio-quick-quote .quick-quotes-app .quote-management {
-    margin-left: 32px;
-    margin-right: 32px;
-}
-
-/* Soft blue background for the quote form container */
 hio-quick-quote .quick-quotes-app {
-    background: rgba(240, 247, 252, 0.85);
+  background: rgba(240, 247, 252, 0.85); /* Light background tint for form area */
+	padding-bottom: 62px;
 }
 
-/* Adjust height for select and input fields */
-hio-quick-quote .quick-quotes-app .form-control-select,
-hio-quick-quote .quick-quotes-app .form-control {
-    height: auto !important;
+hio-quick-quote .quick-quotes-app .form-container {
+  padding-left: 32px;
+  padding-right: 32px;  /* Inner padding for content spacing  */
 }
 
-/* Set text and background colors for the form title */
 hio-quick-quote .quick-quotes-app .quote-form-title {
-    color: #ffffff;
-    background-color: #d02b2f !important;
+  margin-left: 34px;
+  margin-right: 34px;
+	padding: 3px 0 1px 0;
+  background-color: #d02b2f !important; /* Red title bar background */
+  color: #ffffff; /* White text on title */
+	
 }
 
-/* Button color styling */
-hio-quick-quote .quick-quotes-app .btn-quote {
-    color: #ffffff !important;
-    background-color: #d02b2f !important;
+header .quote-title {
+	margin: 1px 0 4px 0 !important;
+	
 }
 
-/* Quote form label spacing and font size */
-hio-quick-quote .quick-quotes-app label {
-    margin-bottom: 0.96rem;
-    margin-top: 0.96rem;
-    font-size: 15px;
+hio-quick-quote .quick-quotes-app .quote-management {
+  margin-left: 32px;
+  margin-right: 32px; /* Aligns footer action (edit/purchase link) with form body */
 }
 
-/* Adjust margin for error icon display */
-hio-quick-quote .quick-quotes-app .material-icons.md-error {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-/* Add top padding to date field column */
 hio-quick-quote div.form-group.col.date {
-    padding-top: 10px;
+  padding-top: 10px; /* Adds breathing room above date input */
 }
 
-/* ===============================
-   📦 Quote App Container Padding
-   =============================== */
-
-/* Extra bottom padding for the quote app */
+/* Fallback if legacy structure is rendered */
 div#pl-5 div#quick-quotes-app {
-    padding-bottom: 62px !important;
+  padding-bottom: 62px !important;
 }
 
 
-.elementor-kit-7 a {
-    line-height: 20px;
+/* ========================================= */
+/* === Input + Button Field Refinements === */
+/* ========================================= */
+
+hio-quick-quote .quick-quotes-app .form-control,
+hio-quick-quote .quick-quotes-app .form-control-select {
+  height: auto !important; /* Ensure full height renders for all inputs */
 }
+
+hio-quick-quote .quick-quotes-app label {
+  margin: 0.96rem 0;
+  font-size: 15px; /* Consistent label spacing and size */
+}
+
+hio-quick-quote .quick-quotes-app .material-icons.md-error {
+  margin: 20px 0; /* Adds space around error icons */
+}
+
+hio-quick-quote .quick-quotes-app .btn-quote {
+  background-color: #d02b2f !important; /* Match branding color */
+  color: #ffffff !important;           /* Button text color */
+}
+
+
+/* ======================================= */
+/* === Tab Navigation (Hole/Putting) ==== */
+/* ======================================= */
+
+/* Base layout for nav-tabs container */
+.nav-tabs {
+  display: flex;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 30px;
+  min-height: 50px; /* Ensure enough vertical room */
+}
+
+/* Ensure equal width tabs using flex */
+.nav-fill .nav-item {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+/* Tab items */
+.nav-tabs .nav-item {
+  margin-bottom: -1px; /* Avoid spacing under active tab */
+}
+
+/* General tab link styling */
+.nav-tabs .nav-link {
+  display: block;
+  width: 100%;
+  height: auto !important;
+  padding: 14px 30px;         /* Adds touchable space */
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: #000;
+  background-color: #f1f1f1;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+/* Active tab styling */
+.nav-tabs .nav-link.active {
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+  color: #000;
+}
+
 ```
 
-I am currently working on styling the image...
 
-### 2025-06-04 – 19:55 PT – Full Progress Rebase Against Contract Phases
-
-#### 🔁 Summary
-This entry resets the project’s tracking against the original 5-phase contract. Each phase is listed with a detailed checklist for internal reference and scope alignment.
-
----
-
-#### ✅ PHASE 1: Dev Setup & Scoping Validation – COMPLETE
-
-**Deliverables:**
-- WP Engine Dev site reset
-- Clean WordPress install
-- Page and layout audit complete
-- Scope boundaries clarified
-
-**Checklist:**
-- [x] Created WP Engine backup before reset
-- [x] Dropped database tables via phpMyAdmin
-- [x] Used FileZilla to delete /wp-content/ and root files
-- [x] Contacted WP Engine support to reset dev environment
-- [x] Clean WP install confirmed
-- [x] Installed Hello Elementor theme
-- [x] Installed Elementor, UAE, WPForms
-- [x] Uploaded all required media files
-- [x] Integrated Myriad Pro using Adobe Fonts workaround
-- [x] Created complete page map with layout categorization
-- [x] Defined project scope boundaries (partner pages, SEO, CRM)
-
----
-
-#### 🔄 PHASE 2: Site-Wide Layout & Design System – IN PROGRESS (~60%)
-
-**Deliverables:**
-- Global color, font, and spacing tokens created
-- Header and footer templates built using UAE
-- Design system foundation laid
-
-**Checklist:**
-- [x] UAE Header created (matches original layout, not sticky)
-- [x] UAE Footer created (includes nav, contact, legal links)
-- [x] Myriad Pro active via Typekit CSS ID
-- [ ] Global color palette defined in Elementor settings
-- [ ] Typography hierarchy configured
-- [ ] Spacing rules set (padding, column gaps)
-- [ ] Button styles globally configured
-- [ ] Mobile header/footer styling completed
-- [ ] Template assignments verified site-wide
-- [ ] Global Elementor settings finalized
-
----
-
-#### 🔄 PHASE 3: Core Page Rebuilds – IN PROGRESS (~10%)
-
-**Deliverables:**
-- 8 uniquely designed pages rebuilt from scratch
-- SEO structure maintained
-- Fully responsive layout per page
-
-**Checklist:**
-- [x] Home page content fully added
-- [ ] Home page desktop styling complete
-- [ ] Home page mobile responsiveness configured
-- [ ] Header/footer integration verified on homepage
-- [ ] Contact page created with form
-- [ ] FAQ page rebuilt with toggles or anchors
-- [ ] Insurance pages recreated (Hole-in-One, Putting, Million Dollar Shootout)
-- [ ] Sponsor Tee Signs page rebuilt with PDFs
-- [ ] Privacy Policy recreated
-- [ ] Desktop and mobile styling QA for all pages
-
----
-
-#### ⏳ PHASE 4: Partner Pages – NOT STARTED
-
-**Deliverables:**
-- 10–20 partner pages using shared template
-- Unique quote form key + branding on each
-- URL structure preserved
-
-**Checklist:**
-- [ ] Standard Elementor template created for partner layout
-- [ ] Unique logo slots and API form key zone defined
-- [ ] PGA pages prepared (~25 total)
-- [ ] Auto Dealer pages mapped
-- [ ] Pages duplicated and edited with correct data
-- [ ] Noindex tags applied where appropriate
-- [ ] Partner page URLs checked for match and tracking
-
----
-
-#### ⏳ PHASE 5: SEO + Final QA – NOT STARTED
-
-**Deliverables:**
-- Final polish of SEO fields and responsive behavior
-- QA across devices
-- Handoff of site
-
-**Checklist:**
-- [ ] All headings (H1–H4) reviewed for hierarchy
-- [ ] Meta titles and descriptions set per page
-- [ ] Alt text applied to all key images
-- [ ] Quote form tested on all partner pages
-- [ ] Contact form tested for delivery
-- [ ] Mobile and tablet views validated for all pages
-- [ ] Performance optimized (caching, image compression)
-- [ ] Unused plugins/themes removed
-- [ ] Final walkthrough or client training call (optional)
-- [ ] Deliverables handed off (admin access or ZIP export)
