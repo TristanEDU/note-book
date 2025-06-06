@@ -1,3 +1,9 @@
+---
+title: Amy Fanter – Profile
+date: {{date}}
+tags: []
+---
+
 #### Amy Fanter – Profile
 
 **Role:** Director of Marketing  

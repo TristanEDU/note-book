@@ -1,3 +1,9 @@
+---
+title: Meeting With Client
+date: {{date}}
+tags: []
+---
+
 
 
 - MVP basic plane builder

@@ -1,3 +1,9 @@
+---
+title: ASAP Avionics Meeting Notes
+date: {{date}}
+tags: []
+---
+
 # ASAP Avionics Meeting Notes
 
 This page has been consolidated into [project-overview.md](project-overview.md).

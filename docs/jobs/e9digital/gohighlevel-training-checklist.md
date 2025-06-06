@@ -1,3 +1,9 @@
+---
+title: 📋 GoHighLevel & CRM Implementation Training Checklist
+date: {{date}}
+tags: []
+---
+
 # 📋 GoHighLevel & CRM Implementation Training Checklist
 
 ## ✅ Friday: Attribution, Forms, CRM Basics

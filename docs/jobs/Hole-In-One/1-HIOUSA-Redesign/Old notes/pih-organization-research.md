@@ -1,3 +1,9 @@
+---
+title: Prize Indemnity Holdings – Organizational Research Summary
+date: {{date}}
+tags: []
+---
+
 #### Prize Indemnity Holdings – Organizational Research Summary
 
 **Parent Company:** Prize Indemnity Holdings, LLC (PIH)  

@@ -1,3 +1,9 @@
+---
+title: GoHighLevel Day 1 Knowledge Test & Review
+date: {{date}}
+tags: []
+---
+
 # GoHighLevel Day 1 Knowledge Test & Review
 
 ## 🧪 Knowledge Test Walkthrough

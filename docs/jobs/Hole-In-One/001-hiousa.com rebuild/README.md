@@ -1,3 +1,9 @@
+---
+title: Hole-In-One USA Website Rebuild
+date: {{date}}
+tags: []
+---
+
 # Hole-In-One USA Website Rebuild
 
 Planning notes for rebuilding **hiousa.com**. This folder tracks meeting logs, tasks, and project milestones.
