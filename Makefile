@@ -91,3 +91,7 @@ build-newsletters:
 	pdm run mkdocs build
 
 	@echo ""
+
+.PHONY: update-nav
+update-nav:
+	pdm run python syncnotes.py

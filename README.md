@@ -19,6 +19,12 @@ Visit <http://127.0.0.1:8000/> to preview the site locally. To generate the stat
 pdm run mkdocs build
 ```
 
+If you add or rename pages, regenerate the navigation in `mkdocs.yml` by running:
+
+```bash
+python syncnotes.py
+```
+
 ## Contributing
 
 Found a mistake or want to add new content? Feel free to open a pull request or [file an issue](https://github.com/TristanEDU/note-book/issues/new).
