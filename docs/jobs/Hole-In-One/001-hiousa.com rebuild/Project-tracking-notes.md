@@ -1,9 +1,3 @@
----
-title: Chronalogical tracking notes
-date: {{date}}
-tags: []
----
-
 #Chronalogical tracking notes
 
 ##Thursday May 29, Setup and config.
@@ -1032,3 +1026,7 @@ This entry resets the project’s tracking against the original 5-phase contract
 - [ ] Unused plugins/themes removed
 - [ ] Final walkthrough or client training call (optional)
 - [ ] Deliverables handed off (admin access or ZIP export)
+
+
+##6/10/25
+I am currently working on the partners page for the site. I was able to figure out getting the correct font Myriad pro. See [the note were I detail how](../../../web-design/adobe-phonts-hack.md) for details as to how I did this. There are quite a few unexspected issues with the site and design practices that are making rebuilding it extremly diffucult. For example the first paragraph section on [the partners page](https://hiousa.com/partners/) used two different paragraph sections at the bottom just for spacing and the bottome border. It is a utter nightmare. Also there is very little of what could be called global styling outside of the font family and the border colors. I am currently working on the section directly below... We will see how it goes...![I am tring to build out this section](assets/partners-page-section.png)
