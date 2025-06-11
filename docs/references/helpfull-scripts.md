@@ -42,3 +42,55 @@ Simply set the `document.querySelectorAll` to the outermost element and everythi
   });
 })();
 ```
+
+
+## 🔗 Link Extractor & Highlighter Script for Web Cloning
+
+This script is designed to **highlight and extract all `<a>` tag links** from a webpage. It's ideal when you're duplicating or analyzing a page that includes **linked images, inline text links, and heading links**, and you need a fast way to audit or copy all URLs.
+
+---
+
+### ✅ What It Does:
+- Highlights every `<a>` tag on the page with a red outline.
+- Adds a `data-link-index` attribute for easier tracking.
+- Extracts each link’s:
+  - Index number
+  - Destination URL (`href`)
+  - Type (`Image Link` or `Text Link`)
+  - Display text or image `alt` (fallbacks to `[image]` if missing)
+- Outputs everything in a clean console table.
+
+---
+
+### 🧪 How to Use It:
+1. Open the page you want to analyze in Google Chrome.
+2. Right-click anywhere on the page and choose **Inspect**.
+3. In the **Console** tab, paste the script below and hit **Enter**:
+
+```js
+document.querySelectorAll('a').forEach((el, i) => {
+  el.style.outline = '2px solid red';
+  el.setAttribute('data-link-index', i + 1);
+});
+
+const links = Array.from(document.querySelectorAll('a')).map((a, i) => {
+  const text = a.textContent.trim();
+  const img = a.querySelector('img');
+  return {
+    index: i + 1,
+    href: a.href,
+    type: img ? 'Image Link' : 'Text Link',
+    content: img ? (img.alt || '[image]') : text
+  };
+});
+
+console.table(links);
+```
+
+4. Copy the table from the console (right-click → **Copy table**) and paste it into a spreadsheet or Markdown file.
+
+---
+
+### 💡 Tip:
+Use this when replicating legacy or unstructured pages where link tracking and structure aren’t obvious from the visual layout alone.
+

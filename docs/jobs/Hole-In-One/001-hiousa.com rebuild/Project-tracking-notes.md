@@ -24,14 +24,14 @@ spent half a hour setting up project managment and organisation systems this mor
 
 ## 🧭 Milestone Checklist
 
-1. Site Audit & Scope Finalization  
-2. Environment Setup on WP Engine  
-3. Global Styles + Header/Footer Framework (Elementor Free + UAE)  
-4. Rebuild Core Pages (Home, Services, Contact, etc.)  
-5. Rebuild Partner Pages (10–20 variations)  
-6. Forms, Navigation, & QA  
-7. Content Migration + SEO Checks  
-8. Pre-Launch Finalization + Handoff  
+1. Site Audit & Scope Finalization 
+2. Environment Setup on WP Engine 
+3. Global Styles + Header/Footer Framework (Elementor Free + UAE) 
+4. Rebuild Core Pages (Home, Services, Contact, etc.) 
+5. Rebuild Partner Pages (10–20 variations) 
+6. Forms, Navigation, & QA 
+7. Content Migration + SEO Checks 
+8. Pre-Launch Finalization + Handoff 
 
 ---
 
@@ -1031,3 +1031,11 @@ This entry resets the project’s tracking against the original 5-phase contract
 ##6/10/25
 I am currently working on the partners page for the site. I was able to figure out getting the correct font Myriad pro. See [the note were I detail how](../../../web-design/adobe-phonts-hack.md) for details as to how I did this. There are quite a few unexspected issues with the site and design practices that are making rebuilding it extremly diffucult. For example the first paragraph section on [the partners page](https://hiousa.com/partners/) used two different paragraph sections at the bottom just for spacing and the bottome border. It is a utter nightmare. Also there is very little of what could be called global styling outside of the font family and the border colors. I am currently working on the section directly below... We will see how it goes...![I am tring to build out this section](assets/partners-page.png)
 
+I will need to go back through and check all the links with a fine tooth comb. Right now I know that there are both styling and direction errors
+
+I am trying to figuer out how to build this drop down in elementor... there is not a native dropdown for it so I will likely have to build a manual one...![the dropdown](assets/partners-dropdown.png)
+
+
+I think I can use the acordian deal from elementor. It seems like it will work prettly well.
+
+It is working great I just need to complet the content and the dropdowns.
