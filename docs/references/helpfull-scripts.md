@@ -67,12 +67,35 @@ This script is designed to **highlight and extract all `<a>` tag links** from a 
 2. Right-click anywhere on the page and choose **Inspect**.
 3. In the **Console** tab, paste the script below and hit **Enter**:
 
-```js
+```
+// Add visual index badge and outline each link
 document.querySelectorAll('a').forEach((el, i) => {
-  el.style.outline = '2px solid red';
+  el.style.outline = '2px solid blue';
   el.setAttribute('data-link-index', i + 1);
+
+  // Create badge element
+  const badge = document.createElement('div');
+  badge.textContent = i + 1;
+  badge.style.position = 'absolute';
+  badge.style.background = 'yellow';
+  badge.style.color = 'black';
+  badge.style.fontSize = '10px';
+  badge.style.padding = '2px 4px';
+  badge.style.border = '1px solid black';
+  badge.style.borderRadius = '3px';
+  badge.style.zIndex = '9999';
+  badge.style.transform = 'translate(-50%, -50%)';
+
+  // Position badge
+  const rect = el.getBoundingClientRect();
+  badge.style.left = `${rect.left + window.scrollX}px`;
+  badge.style.top = `${rect.top + window.scrollY}px`;
+  badge.style.position = 'absolute';
+
+  document.body.appendChild(badge);
 });
 
+// Extract and log link data
 const links = Array.from(document.querySelectorAll('a')).map((a, i) => {
   const text = a.textContent.trim();
   const img = a.querySelector('img');
@@ -85,6 +108,7 @@ const links = Array.from(document.querySelectorAll('a')).map((a, i) => {
 });
 
 console.table(links);
+
 ```
 
 4. Copy the table from the console (right-click → **Copy table**) and paste it into a spreadsheet or Markdown file.
