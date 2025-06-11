@@ -1038,4 +1038,26 @@ I am trying to figuer out how to build this drop down in elementor... there is n
 
 I think I can use the acordian deal from elementor. It seems like it will work prettly well.
 
-It is working great I just need to complet the content and the dropdowns.
+It is working great I just need to complet the content and the dropdowns
+
+### 2025-06-04 – 21:42 PT – Core Page Rebuilds Nearly Complete (2 Pages Remaining)
+
+- All major pages from **Home** through **Partners** have been rebuilt in Elementor, replicating the structure, content, and layout of the original site.
+- Rebuilt pages include:  
+  Home, Hole-in-One Insurance, Prize Package Ideas, Putting Contest, Million Dollar Shootout, Sponsor Tee Signs, Contest Insurance, FAQ, Privacy Policy, Contact, and Partners.
+- The final two pages are still in progress and will complete the Phase 3 core rebuild milestone once finished.
+- All pages are constructed using clean Elementor and UAE components — no custom CSS has been introduced.
+- Visual structure is consistent and well-aligned with the legacy design.
+- Global font and spacing rules are semi-consistent, but the final pass for typography, padding, button styles, and spacing is still pending.
+- Internal and external links still need to be placed or re-verified across all pages.
+- Quote form placeholders are in place on relevant pages, pending integration.
+- Mobile responsiveness is partially addressed but will require a full device pass before final QA.
+
+**Next Steps:**
+- Finish rebuilding the final 2 pages
+- Add all missing links across existing pages
+- Complete final styling (font sizes, spacing, button appearance)
+- Begin templating the Partner Pages (Phase 4)
+
+
+I am working on finding a way to export the old contact form from the stg site and use that in the new setup.
