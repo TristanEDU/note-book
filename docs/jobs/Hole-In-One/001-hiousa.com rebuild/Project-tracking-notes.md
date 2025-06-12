@@ -1256,3 +1256,4 @@ You’ll now have a **fully responsive**, visually matched layout:
 
 Would you like a downloadable `.json` Elementor template file for this layout too (Pro version only)?
 
+I am having a devil of a time properly styling the contact form however I did just find the theme editible [css file](assets/old-sites-css.txt) I think That I might go batty trying to figure this all out...
