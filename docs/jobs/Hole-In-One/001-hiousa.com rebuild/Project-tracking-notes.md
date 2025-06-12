@@ -1078,8 +1078,8 @@ Perfect — here’s a **step-by-step Elementor widget layout** to recreate the 
 
 Use a **2-column section** inside a full-width container:
 
-- **Left Column (33%)**: Contact image + address + phone (static HTML)
-- **Right Column (67%)**: Contact Form 7 shortcode + heading + image
+- **Left Column (33%):** Contact image + address + phone (static HTML)
+- **Right Column (67%):** Contact Form 7 shortcode + heading + image
 
 ---
 
@@ -1096,18 +1096,18 @@ Use a **2-column section** inside a full-width container:
 
 ## 📐 Column 1: Static Info (Left Side)
 
-**Widget 1** : *Image*
+**Widget 1:** *Image*
 
 - Upload logo (e.g., `/wp-content/uploads/2022/06/ezgif.com-gif-maker-15-1.webp`)
 - Style: Width 300px, centered
 
-**Widget 2** : *Button (Optional)*
+**Widget 2:** *Button (Optional)*
 
 - Text: `Request A Quote`
 - Link: `https://hiousa.internationalholeinoneassociation.com/login`
 - Style: Accent color, margin bottom \~20px
 
-**Widget 3** : *Text Editor*
+**Widget 3:** *Text Editor*
 
 ```html
 <h3>6195 Ridgeview Ct., Suite A<br>Reno, NV 89519</h3>
@@ -1119,7 +1119,7 @@ Use a **2-column section** inside a full-width container:
 
 ## 📐 Column 2: Contact Form (Right Side)
 
-**Widget 1** : *Image (FlagStick)*
+**Widget 1** *Image (FlagStick)*
 
 - Image URL: `https://hiousa.com/wp-content/uploads/2022/06/ezgif.com-gif-maker-16.webp`
 - CSS Class: `hio-flag`
