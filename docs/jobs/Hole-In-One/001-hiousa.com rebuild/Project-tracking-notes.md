@@ -1043,7 +1043,7 @@ It is working great I just need to complet the content and the dropdowns
 ### 2025-06-04 – 21:42 PT – Core Page Rebuilds Nearly Complete (2 Pages Remaining)
 
 - All major pages from **Home** through **Partners** have been rebuilt in Elementor, replicating the structure, content, and layout of the original site.
-- Rebuilt pages include:  
+- Rebuilt pages include: 
   Home, Hole-in-One Insurance, Prize Package Ideas, Putting Contest, Million Dollar Shootout, Sponsor Tee Signs, Contest Insurance, FAQ, Privacy Policy, Contact, and Partners.
 - The final two pages are still in progress and will complete the Phase 3 core rebuild milestone once finished.
 - All pages are constructed using clean Elementor and UAE components — no custom CSS has been introduced.
@@ -1078,8 +1078,8 @@ Perfect — here’s a **step-by-step Elementor widget layout** to recreate the 
 
 Use a **2-column section** inside a full-width container:
 
-* **Left Column (33%)**: Contact image + address + phone (static HTML)
-* **Right Column (67%)**: Contact Form 7 shortcode + heading + image
+- **Left Column (33%)**: Contact image + address + phone (static HTML)
+- **Right Column (67%)**: Contact Form 7 shortcode + heading + image
 
 ---
 
@@ -1087,27 +1087,27 @@ Use a **2-column section** inside a full-width container:
 
 #### Section:
 
-* Layout: 2 columns (33% / 67%)
-* Width: Full Width
-* Gap: Default or Wide
-* Padding: Top/bottom padding \~60px (or `pad-t4 pad-b4` equivalent)
+- Layout: 2 columns (33% / 67%)
+- Width: Full Width
+- Gap: Default or Wide
+- Padding: Top/bottom padding \~60px (or `pad-t4 pad-b4` equivalent)
 
 ---
 
 ## 📐 Column 1: Static Info (Left Side)
 
-**Widget 1**: *Image*
+**Widget 1** : *Image*
 
-* Upload logo (e.g., `/wp-content/uploads/2022/06/ezgif.com-gif-maker-15-1.webp`)
-* Style: Width 300px, centered
+- Upload logo (e.g., `/wp-content/uploads/2022/06/ezgif.com-gif-maker-15-1.webp`)
+- Style: Width 300px, centered
 
-**Widget 2**: *Button (Optional)*
+**Widget 2** : *Button (Optional)*
 
-* Text: `Request A Quote`
-* Link: `https://hiousa.internationalholeinoneassociation.com/login`
-* Style: Accent color, margin bottom \~20px
+- Text: `Request A Quote`
+- Link: `https://hiousa.internationalholeinoneassociation.com/login`
+- Style: Accent color, margin bottom \~20px
 
-**Widget 3**: *Text Editor*
+**Widget 3** : *Text Editor*
 
 ```html
 <h3>6195 Ridgeview Ct., Suite A<br>Reno, NV 89519</h3>
@@ -1119,32 +1119,32 @@ Use a **2-column section** inside a full-width container:
 
 ## 📐 Column 2: Contact Form (Right Side)
 
-**Widget 1**: *Image (FlagStick)*
+**Widget 1** : *Image (FlagStick)*
 
-* Image URL: `https://hiousa.com/wp-content/uploads/2022/06/ezgif.com-gif-maker-16.webp`
-* CSS Class: `hio-flag`
-* Centered
+- Image URL: `https://hiousa.com/wp-content/uploads/2022/06/ezgif.com-gif-maker-16.webp`
+- CSS Class: `hio-flag`
+- Centered
 
-**Widget 2**: *Heading*
+**Widget 2** *Heading*
 
-* Text: `Contact Us for More Information`
-* Tag: `H2`
-* Alignment: Center
-* CSS Class: `hio-contact-title`
+- Text: `Contact Us for More Information`
+- Tag: `H2`
+- Alignment: Center
+- CSS Class: `hio-contact-title`
 
-**Widget 3**: *Shortcode*
+**Widget 3** : *Shortcode*
 
-* Paste the Contact Form 7 shortcode:
+- Paste the Contact Form 7 shortcode:
 
   ```plaintext
   [contact-form-7 id="319" title="Contact Form"]
   ```
 
-  * You can verify this ID in WP → Contact → Contact Forms.
+- You can verify this ID in WP → Contact → Contact Forms.
 
-**Widget 4 (Optional)**: *HTML* or Text widget
+**Widget 4 (Optional)** : *HTML* or Text widget
 
-* Use this to add extra notes or styling hooks.
+- Use this to add extra notes or styling hooks.
 
 ---
 
