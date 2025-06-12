@@ -1060,4 +1060,199 @@ It is working great I just need to complet the content and the dropdowns
 - Begin templating the Partner Pages (Phase 4)
 
 
-I am working on finding a way to export the old contact form from the stg site and use that in the new setup.
+I am working on finding a way to export the old contact form from the stg site and use that in the new setup. I think that the best way to do it is to just manually copy all the old form code and paste it into the new enviroment. This unfourtunatly does not bring images or other such dependencies such as styling with it however so I will likly have to add that to the custom code section. It is also likly that that I will need to install and setup the other various contact form 7 plugins that were in the old site however I am hoping to avoid that if I can. [the contact page](assets/old-contact-page.png)
+
+##GPTs Instructions
+The following is GPTs instructions for recreating the layout and styling in elementor
+
+---
+---
+
+Perfect — here’s a **step-by-step Elementor widget layout** to recreate the HIOUSA Contact Form (with Contact Form 7) and match the styling shown in your screenshot.
+
+---
+
+## 🧱 Elementor Layout Structure (Free Version-Compatible)
+
+### ✅ Layout Overview:
+
+Use a **2-column section** inside a full-width container:
+
+* **Left Column (33%)**: Contact image + address + phone (static HTML)
+* **Right Column (67%)**: Contact Form 7 shortcode + heading + image
+
+---
+
+### 🧩 Section Setup:
+
+#### Section:
+
+* Layout: 2 columns (33% / 67%)
+* Width: Full Width
+* Gap: Default or Wide
+* Padding: Top/bottom padding \~60px (or `pad-t4 pad-b4` equivalent)
+
+---
+
+## 📐 Column 1: Static Info (Left Side)
+
+**Widget 1**: *Image*
+
+* Upload logo (e.g., `/wp-content/uploads/2022/06/ezgif.com-gif-maker-15-1.webp`)
+* Style: Width 300px, centered
+
+**Widget 2**: *Button (Optional)*
+
+* Text: `Request A Quote`
+* Link: `https://hiousa.internationalholeinoneassociation.com/login`
+* Style: Accent color, margin bottom \~20px
+
+**Widget 3**: *Text Editor*
+
+```html
+<h3>6195 Ridgeview Ct., Suite A<br>Reno, NV 89519</h3>
+<h2><a href="tel:+1-800-383-7273">800.383.7273</a></h2>
+<h3>F: 775.852.7274</h3>
+```
+
+---
+
+## 📐 Column 2: Contact Form (Right Side)
+
+**Widget 1**: *Image (FlagStick)*
+
+* Image URL: `https://hiousa.com/wp-content/uploads/2022/06/ezgif.com-gif-maker-16.webp`
+* CSS Class: `hio-flag`
+* Centered
+
+**Widget 2**: *Heading*
+
+* Text: `Contact Us for More Information`
+* Tag: `H2`
+* Alignment: Center
+* CSS Class: `hio-contact-title`
+
+**Widget 3**: *Shortcode*
+
+* Paste the Contact Form 7 shortcode:
+
+  ```plaintext
+  [contact-form-7 id="319" title="Contact Form"]
+  ```
+
+  * You can verify this ID in WP → Contact → Contact Forms.
+
+**Widget 4 (Optional)**: *HTML* or Text widget
+
+* Use this to add extra notes or styling hooks.
+
+---
+
+### 🎨 Add Custom CSS
+
+If using Elementor Pro:
+
+* Select the section → Advanced → Custom CSS → Paste the CSS I provided above.
+
+If using Elementor Free:
+
+* Paste CSS into **Appearance → Customize → Additional CSS**.
+```
+/* === HIOUSA Contact Form Replica === */
+
+/* Form Wrapper Background and Layout */
+.wpcf7-form {
+  background-color: rgba(240, 247, 252, 0.85);
+  padding: 32px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Headline */
+.hio-contact-title {
+  text-align: center;
+  font-size: 24px;
+  color: #005483;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* Flag Image (Insert above the headline manually in Elementor or HTML widget) */
+.hio-flag {
+  display: block;
+  margin: 0 auto 15px auto;
+  width: 86px;
+}
+
+/* Input Fields */
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form input[type="tel"],
+.wpcf7-form textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 15px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+/* Labels */
+.wpcf7-form label {
+  display: block;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Submit Button */
+.wpcf7-submit {
+  display: block;
+  width: 100%;
+  background-color: #d02b2f;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.wpcf7-submit:hover,
+.wpcf7-submit:focus {
+  background-color: #b02125;
+}
+
+/* Responsive padding for small screens */
+@media only screen and (max-width: 768px) {
+  .wpcf7-form {
+    padding: 20px;
+  }
+}
+```
+
+---
+
+### ✅ Result
+
+You’ll now have a **fully responsive**, visually matched layout:
+
+* Brand-aligned flag image
+* Red heading
+* 5 field form
+* Styled button
+* Clean spacing
+* Responsive down to mobile
+
+---
+
+Would you like a downloadable `.json` Elementor template file for this layout too (Pro version only)?
+
