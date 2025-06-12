@@ -1508,4 +1508,4 @@ div.entry-summary p a.read-more {
 
 #clear:hover {
 	cursor: pointer;
-}
+}I a
