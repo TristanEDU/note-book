@@ -1261,3 +1261,120 @@ I am having a devil of a time properly styling the contact form however I did ju
 
 I am looking into why it wont style properly. This apears to in part be a issue of the bootstrap theme not in elementor. The form aparently relies heavily on it's grid feature for it's styling
 
+I ended up just creating a new form that styles properly with elementor. It will look generaly the same.
+
+# 🧾 Contact Form 7 Styling Replication – Hole In One USA
+
+## 🎯 Objective
+
+Recreate the **visual appearance, layout, and behavior** of the original HoleInOneUSA.com contact form on the **new WordPress site using Elementor** and **Contact Form 7**, without relying on the original theme or Bootstrap framework. The goal was to achieve **pixel-perfect styling** to maintain brand consistency, visual trust, and a seamless user experience.
+
+---
+
+## 🛠️ What We Did – Step-by-Step
+
+### 1. ✅ Form Structure Recreation
+
+We began by analyzing the HTML structure of the original contact form. The form used **Contact Form 7** and relied heavily on Bootstrap classes such as `.col-sm-6`, `.row`, and `.form-group` to manage layout.
+
+To recreate this without Bootstrap (since the Hello Elementor theme doesn’t include it), we:
+
+- Built a custom CF7 form using shortcodes for each field (`[text]`, `[email]`, `[textarea]`, `[submit]`, etc.)
+- Manually structured the layout to simulate the old site’s two-column and full-width rows
+- Replicated the split layout for the reCAPTCHA and submit button using modern **Flexbox-based layout**, handled through custom CSS
+
+The form was embedded on the new page using the Elementor HTML widget.
+
+---
+
+### 2. 🔍 Extracting Accurate Styling from the Old Site
+
+To ensure fidelity with the old design, we wrote a **custom JavaScript script** and ran it in the browser’s DevTools console. This script:
+
+- Located the Contact Form 7 element by its `id` (`#wpcf7-f319-p27-o1`)
+- Selected all important child elements: inputs, labels, textarea, the submit button, and layout wrappers
+- Used `getComputedStyle()` to extract the **exact final styles** applied to each element (including inherited, injected, and overridden styles)
+- Filtered out unimportant or default values to keep the results readable and relevant
+- Automatically copied the results to the clipboard for further analysis
+
+This gave us a JSON object with values like font size, line height, margin, padding, colors, borders, and spacing — everything we needed to match the frontend appearance exactly.
+
+---
+
+### 3. 🎨 CSS Styling Based on Extracted Values
+
+Using the JSON of computed styles, we wrote a **custom CSS override block** that replicated the visual styling of the original form. Key parts included:
+
+#### Font + Typography
+
+- Set the font to `'myriad-pro', sans-serif` using Adobe Fonts
+- Used `14px` font size for labels, `16px` for input fields
+- Capitalized labels and added `letter-spacing: 2px` to match visual weight
+
+#### Input Fields
+
+- Styled all text inputs and textareas with:
+  - Flat `1px solid` gray border (`#9d9d9d`)
+  - `8px 12px` padding for better spacing
+  - No border radius to maintain the squared-off appearance
+
+#### Button Styling
+
+- Matched the red theme using `#d02b2f` for the background
+- Ensured white text, uppercase letters, and consistent padding
+- Added a darker red hover state (`#800d0f`)
+- Used `max-width: 300px` and centered layout for modern design clarity
+
+#### Layout Spacing
+
+- Manually recreated `.form-group` spacing with `margin-bottom: 18px`
+- Added responsive media queries to stack the layout cleanly on mobile
+- Removed reliance on Bootstrap’s `.row` and `.col-*` grid system
+
+#### Responsive Adjustments
+
+- Used `@media` rules to shift two-column layouts into full-width stacked fields on smaller screens
+- Allowed the submit button and reCAPTCHA to gracefully reflow without overlap or misalignment
+
+---
+
+## 🔧 Additional Integration Work
+
+### 🅰️ Font Setup with Adobe Fonts
+
+We re-integrated the **Myriad Pro** font using the "Custom Adobe Fonts (Typekit)" plugin. The kit ID used was:
+
+
+This allowed the new site to display brand-consistent typography even though it was on a different theme and architecture.
+
+### 🅱️ Google reCAPTCHA Setup
+
+To make reCAPTCHA render correctly (instead of showing `[recaptcha recaptcha-250]`), we:
+
+- Activated the **reCAPTCHA integration** in WP Admin → Contact → Integration
+- Ensured the appropriate keys (site + secret) were added
+- Modified the CF7 shortcode to just `[recaptcha]` without arguments
+
+---
+
+## 📦 Result
+
+After applying everything:
+
+- The form now visually matches the original design across desktop and mobile
+- Spacing, fonts, borders, and button states are all consistent
+- The form is cleanly embedded in Elementor and requires **no Bootstrap or external grid frameworks**
+- CSS is modular and reusable for other forms or site sections
+
+---
+
+## 🧰 Reusable Assets
+
+- ✅ Final working CF7 shortcode (with layout)
+- ✅ Complete CSS override block
+- ✅ Markdown documentation of each step
+- ✅ JSON dump of extracted computed styles (archived for reference)
+
+So far during this build I have counted over twenty different styles that should be the same...
+
+
