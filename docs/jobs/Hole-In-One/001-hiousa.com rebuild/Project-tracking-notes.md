@@ -1378,3 +1378,6 @@ After applying everything:
 So far during this build I have counted over twenty different styles that should be the same...
 
 
+I have now completed the privacy page and the contact along with the Q&A page and am about ready to start on the template for the PGA pages
+
+
