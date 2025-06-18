@@ -1381,3 +1381,61 @@ So far during this build I have counted over twenty different styles that should
 I have now completed the privacy page and the contact along with the Q&A page and am about ready to start on the template for the PGA pages
 
 
+### 2025-06-17 – 16:40 PT – Milestone Rebase + Core Pages Complete
+
+**Focus:** Confirm current project status and re-establish detailed checklist from top to bottom
+
+#### ✅ Completed Tasks
+- Rebuilt all main site pages, including the Partners page and the final two core pages (Contest Insurance, Privacy Policy)
+- Completed desktop layouts for all core pages using Elementor containers
+- Fonts fully restored using Myriad Pro via Adobe Fonts plugin workaround
+- Minimal custom CSS used where Elementor alone couldn't match original visual design
+- UAE Header and Footer Builder used to match original structure for desktop
+- All visible content added, including CTA buttons, sections, and embedded quote/contact forms
+
+#### 🔄 In Progress
+- Link validation and button testing across all rebuilt pages
+- Partner pages: awaiting templating and duplication pass
+- Mobile responsiveness not yet addressed (to be done after desktop is finalized)
+
+#### 📌 Next Steps
+- Assign individual API keys to each partner quote form
+- Rebuild header and footer for mobile breakpoints and configure responsive navigation
+- Conduct full mobile and tablet optimization pass across all pages
+- Test all contact and quote forms for actual submission delivery
+- Final SEO structure (meta, alt tags, H1 usage) and accessibility polish
+- Perform QA sweep for spacing/padding inconsistencies and interactive elements
+
+➡️ For the **full status update with detailed breakdowns**, see:  
+[🔗 Full Project Recap and Checklist](### 2025-06-17 – 16:40 PT – Milestone Rebase + Core Pages Complete
+
+**Focus:** Confirm current project status and re-establish detailed checklist from top to bottom
+
+#### ✅ Completed Tasks
+- Rebuilt all main site pages, including the Partners page and the final two core pages (Contest Insurance, Privacy Policy)
+- Completed desktop layouts for all core pages using Elementor containers
+- Fonts fully restored using Myriad Pro via Adobe Fonts plugin workaround
+- Minimal custom CSS used where Elementor alone couldn't match original visual design
+- UAE Header and Footer Builder used to match original structure for desktop
+- All visible content added, including CTA buttons, sections, and embedded quote/contact forms
+
+#### 🔄 In Progress
+- Link validation and button testing across all rebuilt pages
+- Partner pages: awaiting templating and duplication pass
+- Mobile responsiveness not yet addressed (to be done after desktop is finalized)
+
+#### 📌 Next Steps
+- Assign individual API keys to each partner quote form
+- Rebuild header and footer for mobile breakpoints and configure responsive navigation
+- Conduct full mobile and tablet optimization pass across all pages
+- Test all contact and quote forms for actual submission delivery
+- Final SEO structure (meta, alt tags, H1 usage) and accessibility polish
+- Perform QA sweep for spacing/padding inconsistencies and interactive elements
+
+➡️ For the **full status update with detailed breakdowns**, see:  
+[🔗 Full Project Recap and Checklist](6-4-25_Rebuild-Update.md)
+
+---
+
+
+---
